@@ -675,22 +675,6 @@
 			name = "Sandwich", 
 			not_for_sale = true
 		}, 
-		["sandwich-default"] = {
-			image = "rbxassetid://2582282124", 
-			tool = "GenericTool", 
-			ailment_to_boost = "hungry", 
-			model_handle = "Sandwich", 
-			anims = {
-				hold = "SandwichHold", 
-				use = "SandwichEat"
-			}, 
-			uses = 3, 
-			cost = 2, 
-			temporary = true, 
-			rarity = "common", 
-			name = "Sandwich", 
-			not_for_sale = true
-		}, 
 		lolipop = {
 			image = "rbxassetid://1106651124", 
 			tool = "CandyTool", 
