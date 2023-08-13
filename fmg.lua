@@ -3835,5 +3835,2385 @@
 			donatable = false, 
 			temporary = true, 
 			colorable = true
-		}
+		},
+		["stroller-c"] = {
+			image = "rbxassetid://1374259106", 
+			tool = "StrollerTool", 
+			cost = 100, 
+			rarity = "uncommon", 
+			colorable = true, 
+			colorable_models = { "Stroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Stroller", 
+			model_handle = "Stroller"
+		}, 
+		["stroller-default"] = {
+			image = "rbxassetid://1374264340", 
+			tool = "StrollerTool", 
+			rarity = "common", 
+			donatable = false, 
+			temporary = true, 
+			colorable = false, 
+			colorable_models = { "Stroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Default Stroller", 
+			model_handle = "DefaultStroller"
+		}, 
+		flower_stroller = {
+			image = "rbxassetid://4822522123", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Flower Stroller", 
+			model_handle = "FlowerStroller", 
+			animation = "BabySleepOnBack"
+		}, 
+		balloon_stroller = {
+			image = "rbxassetid://2761277454", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			cost = 1500, 
+			colorable = true, 
+			colorable_models = { "BalloonStroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Balloon Stroller", 
+			model_handle = "BalloonStroller", 
+			animation = "BabyOnBalloonStroller"
+		}, 
+		egg_stroller = {
+			image = "rbxassetid://2761277703", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			colorable = true, 
+			colorable_models = { "EggStroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Egg Stroller", 
+			model_handle = "EggStroller", 
+			animation = "BabyOnEggStroller"
+		}, 
+		double_stroller = {
+			image = "rbxassetid://1408016951", 
+			tool = "StrollerTool", 
+			rarity = "uncommon", 
+			cost = 135, 
+			colorable = true, 
+			colorable_models = { "DoubleStroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Double Stroller", 
+			model_handle = "DoubleStroller"
+		}, 
+		heart_stroller = {
+			image = "rbxassetid://2848462165", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Heart Stroller", 
+			model_handle = "HeartStroller"
+		}, 
+		car_stroller = {
+			image = "rbxassetid://3269748269", 
+			tool = "StrollerTool", 
+			rarity = "uncommon", 
+			cost = 450, 
+			colorable = true, 
+			colorable_models = { "CarStroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Car Stroller", 
+			model_handle = "CarStroller"
+		}, 
+		droplet_stroller = {
+			image = "rbxassetid://1406692267", 
+			tool = "StrollerTool", 
+			rarity = "uncommon", 
+			cost = 300, 
+			colorable = true, 
+			colorable_models = { "DropletStroller" }, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Droplet Stroller", 
+			model_handle = "DropletStroller"
+		}, 
+		rocket_ship_stroller = {
+			image = "rbxassetid://2981204560", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			cost = 500, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Rocket Ship Stroller", 
+			model_handle = "RocketShipStroller", 
+			animation = "BabyOnUnicornStroller", 
+			colorable = true, 
+			colorable_models = { "RocketShipStroller" }
+		}, 
+		throne_stroller = {
+			image = "rbxassetid://2982964426", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			cost = 1250, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Throne Stroller", 
+			model_handle = "ThroneStroller", 
+			animation = "BabyOnBalloonStroller", 
+			colorable = true, 
+			colorable_models = { "ThroneStroller" }
+		}, 
+		rainbow_stroller = {
+			image = "rbxassetid://6710108407", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			cost = 2000, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Rainbow Stroller", 
+			model_handle = "RainbowStroller"
+		}, 
+		quad_stroller = {
+			image = "rbxassetid://2408052388", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Quad Stroller", 
+			model_handle = "QuadStroller"
+		}, 
+		race_car_stroller = {
+			image = "rbxassetid://2408035750", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Race Car Stroller", 
+			model_handle = "RaceCarStroller"
+		}, 
+		airplane_stroller = {
+			image = "rbxassetid://2761277758", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Airplane Stroller", 
+			model_handle = "AirplaneStroller"
+		}, 
+		cradle_stroller = {
+			image = "rbxassetid://2408051111", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Cradle Stroller", 
+			model_handle = "CradleStroller", 
+			animation = "BabySleepOnBack"
+		}, 
+		unicorn_stroller = {
+			image = "rbxassetid://2761277803", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Unicorn Stroller", 
+			model_handle = "UnicornStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		vampire_stroller = {
+			image = "rbxassetid://2466291803", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			currency_id = "candy", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Vampire Stroller", 
+			model_handle = "VampireStroller", 
+			animation = "BabySleepOnBack"
+		}, 
+		french_fries_stroller = {
+			image = "rbxassetid://3009779395", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "French Fries Stroller", 
+			model_handle = "FrenchFriesStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		banana_stroller = {
+			image = "rbxassetid://3009779202", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Banana Stroller", 
+			model_handle = "BananaStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		popsicle_stroller = {
+			image = "rbxassetid://3009779443", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Popsicle Stroller", 
+			model_handle = "PopsicleStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		cannon_stroller = {
+			image = "rbxassetid://3009779260", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Cannon Stroller", 
+			model_handle = "CannonStroller"
+		}, 
+		wheelbarrow_stroller = {
+			image = "rbxassetid://3066606234", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			cost = 1000, 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Wheelbarrow Stroller", 
+			model_handle = "WheelbarrowStroller"
+		}, 
+		kangaroo_stroller = {
+			image = "rbxassetid://3486906383", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Kangaroo Stroller", 
+			model_handle = "KangarooStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		hatched_egg_stroller = {
+			image = "rbxassetid://3486906113", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Hatched Egg Stroller", 
+			model_handle = "HatchedEggStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		dog_house_stroller = {
+			image = "rbxassetid://3486905775", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Dog House Stroller", 
+			model_handle = "DogHouseStroller", 
+			animation = "BabyOnUnicornStroller"
+		}, 
+		trike_stroller = {
+			image = "rbxassetid://2657671637", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Trike Stroller", 
+			model_handle = "TrikeStroller"
+		}, 
+		pizza_stroller = {
+			image = "rbxassetid://2657670918", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Pizza Stroller", 
+			model_handle = "PizzaStroller"
+		}, 
+		duck_stroller = {
+			image = "rbxassetid://2761277656", 
+			tool = "StrollerTool", 
+			hand_over_team_restricted = { "Babies" }, 
+			rarity = "ultra_rare", 
+			name = "Duck Stroller", 
+			model_handle = "DuckStroller"
+		}, 
+		ice_cream_stroller = {
+			image = "rbxassetid://2657670917", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Ice Cream Stroller", 
+			model_handle = "IceCreamStroller"
+		}, 
+		baby_basket_stroller = {
+			image = "rbxassetid://2657667120", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Baby Basket Stroller", 
+			model_handle = "BabyBasketStroller"
+		}, 
+		bunny_stroller = {
+			image = "rbxassetid://3082046286", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Bunny Stroller", 
+			model_handle = "BunnyStroller", 
+			animation = "BabyOnBalloonStroller", 
+			currency_id = "eggs"
+		}, 
+		easter_egg_stroller = {
+			image = "rbxassetid://3082046174", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Easter Egg Stroller", 
+			model_handle = "EasterEggStroller", 
+			animation = "BabyOnUnicornStroller", 
+			currency_id = "eggs"
+		}, 
+		half_egg_stroller = {
+			image = "rbxassetid://3082046130", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Half Egg Stroller", 
+			model_handle = "HalfEggStroller", 
+			animation = "BabyOnUnicornStroller", 
+			currency_id = "eggs"
+		}, 
+		cauldron_stroller = {
+			image = "rbxassetid://4115248341", 
+			tool = "StrollerTool", 
+			currency_id = "candy_2019", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Cauldron Stroller", 
+			model_handle = "CauldronStroller"
+		}, 
+		triple_stroller = {
+			image = "rbxassetid://4361544584", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Triple Stroller", 
+			model_handle = "TripleStroller"
+		}, 
+		crate_stroller = {
+			image = "rbxassetid://4361544460", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Crate Stroller", 
+			model_handle = "CrateStroller"
+		}, 
+		reindeer_stroller = {
+			image = "rbxassetid://4470748252", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Reindeer Stroller", 
+			model_handle = "ReindeerStroller", 
+			animation = "BabyOnReindeerStroller"
+		}, 
+		pumpkin_stroller = {
+			image = "rbxassetid://5882036757", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Pumpkin Stroller", 
+			currency_id = "candy_2020", 
+			cost = 1250, 
+			not_for_sale = true, 
+			model_handle = "PumpkinStroller"
+		}, 
+		palanquin_stroller = {
+			image = "rbxassetid://6309085791", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Palanquin Stroller", 
+			cost = 800, 
+			model_handle = "PalanquinStroller", 
+			not_for_sale = true
+		}, 
+		catapult_stroller = {
+			image = "rbxassetid://6475616233", 
+			tool = "StrollerTool", 
+			rarity = "ultra_rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Catapult Stroller", 
+			model_handle = "CatapultStroller"
+		}, 
+		high_heel_stroller = {
+			image = "rbxassetid://6475613319", 
+			tool = "StrollerTool", 
+			rarity = "rare", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "High Heel Stroller", 
+			model_handle = "HighHeelStroller"
+		}, 
+		clam_stroller = {
+			image = "rbxassetid://6872761726", 
+			tool = "StrollerTool", 
+			rarity = "common", 
+			hand_over_team_restricted = { "Babies" }, 
+			name = "Clam Stroller", 
+			model_handle = "ClamStroller", 
+			donatable = false
+		},
+		cowboy_hat = {
+					name = "Cowboy Hat", 
+					model_handle = "CowboyHat", 
+					cost = 150, 
+					image = "rbxassetid://4849975936", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				bowler = {
+					name = "Bowler", 
+					model_handle = "Bowler", 
+					cost = 150, 
+					image = "rbxassetid://4849975329", 
+					rarity = "common"
+				}, 
+				head_chef = {
+					name = "Head Chef", 
+					model_handle = "HeadChef", 
+					cost = 750, 
+					image = "rbxassetid://4849976512", 
+					rarity = "rare"
+				}, 
+				reindeer_antlers = {
+					name = "Reindeer Antlers", 
+					model_handle = "ReindeerAntlers", 
+					cost = 500, 
+					image = "rbxassetid://4849973276", 
+					rarity = "rare"
+				}, 
+				fez = {
+					name = "Fez", 
+					model_handle = "Fez", 
+					image = "rbxassetid://5067924466", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				sailor_cap = {
+					name = "Sailor Cap", 
+					model_handle = "SailorCap", 
+					cost = 500, 
+					image = "rbxassetid://4849978200", 
+					rarity = "rare"
+				}, 
+				rose = {
+					name = "Rose", 
+					model_handle = "Rose", 
+					cost = 250, 
+					image = "rbxassetid://4849978102", 
+					rarity = "uncommon"
+				}, 
+				purple_rose = {
+					name = "Purple Rose", 
+					model_handle = "PurpleRose", 
+					cost = 500, 
+					image = "rbxassetid://4849977695", 
+					rarity = "ultra_rare"
+				}, 
+				ninja_headband = {
+					name = "Ninja Headband", 
+					model_handle = "NinjaHeadband", 
+					cost = 250, 
+					image = "rbxassetid://4849976912", 
+					rarity = "uncommon"
+				}, 
+				wizard_hat = {
+					name = "Wizard Hat", 
+					model_handle = "WizardHat", 
+					cost = 750, 
+					image = "rbxassetid://4849978608", 
+					rarity = "rare"
+				}, 
+				chicken_hat = {
+					name = "Chicken Hat", 
+					model_handle = "ChickenHat", 
+					cost = 500, 
+					image = "rbxassetid://4849975633", 
+					rarity = "rare"
+				}, 
+				halo = {
+					name = "Halo", 
+					model_handle = "Halo", 
+					image = "rbxassetid://4489907389", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true, 
+					not_for_sale = true
+				}, 
+				bucket_hat = {
+					name = "Bucket Hat", 
+					model_handle = "BucketHat", 
+					cost = 125, 
+					image = "rbxassetid://4849975400", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				explorer_hat = {
+					name = "Explorer Hat", 
+					model_handle = "ExplorerHat", 
+					cost = 250, 
+					image = "rbxassetid://4849976006", 
+					rarity = "uncommon"
+				}, 
+				red_beanie = {
+					name = "Red Beanie", 
+					model_handle = "RedBeanie", 
+					cost = 250, 
+					image = "rbxassetid://4849977830", 
+					rarity = "uncommon"
+				}, 
+				red_ribbon = {
+					name = "Red Ribbon", 
+					model_handle = "RedRibbon", 
+					cost = 125, 
+					image = "rbxassetid://4849977930", 
+					rarity = "common"
+				}, 
+				white_visor = {
+					name = "White Visor", 
+					model_handle = "WhiteVisor", 
+					cost = 100, 
+					image = "rbxassetid://4849978530", 
+					rarity = "common"
+				}, 
+				blue_cap = {
+					name = "Blue Cap", 
+					model_handle = "BlueCap", 
+					image = "rbxassetid://4849975245", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true, 
+					donatable = false
+				}, 
+				buttoned_ushanka = {
+					name = "Buttoned Ushanka", 
+					model_handle = "ButtonedUshanka", 
+					cost = 100, 
+					image = "rbxassetid://4849975457", 
+					rarity = "common"
+				}, 
+				construction_hat = {
+					name = "Construction Hat", 
+					model_handle = "ConstructionHat", 
+					cost = 125, 
+					image = "rbxassetid://4849975838", 
+					rarity = "common"
+				}, 
+				conductor_hat = {
+					name = "Conductor Hat", 
+					model_handle = "ConductorHat", 
+					cost = 250, 
+					image = "rbxassetid://4849975702", 
+					rarity = "uncommon"
+				}, 
+				morion = {
+					name = "Morion", 
+					model_handle = "Morion", 
+					cost = 200, 
+					image = "rbxassetid://4849976759", 
+					rarity = "uncommon"
+				}, 
+				sombrero = {
+					name = "Sombrero", 
+					model_handle = "Sombrero", 
+					cost = 300, 
+					image = "rbxassetid://4853278310", 
+					rarity = "uncommon"
+				}, 
+				chef_hat = {
+					name = "Chef Hat", 
+					model_handle = "ChefHat", 
+					cost = 150, 
+					image = "rbxassetid://4849975557", 
+					rarity = "uncommon"
+				}, 
+				beret = {
+					name = "Beret", 
+					model_handle = "Beret", 
+					cost = 300, 
+					image = "rbxassetid://4849973352", 
+					rarity = "uncommon"
+				}, 
+				black_fedora = {
+					name = "Black Fedora", 
+					model_handle = "BlackFedora", 
+					cost = 300, 
+					image = "rbxassetid://4849975075", 
+					rarity = "uncommon"
+				}, 
+				party_crown = {
+					name = "Party Crown", 
+					model_handle = "PartyCrown", 
+					cost = 200, 
+					image = "rbxassetid://4849977244", 
+					rarity = "uncommon"
+				}, 
+				k9_hat = {
+					name = "Marching Band Cap", 
+					model_handle = "MarchingBandCap", 
+					cost = 250, 
+					image = "rbxassetid://5228764153", 
+					rarity = "uncommon"
+				}, 
+				flamenco_hat = {
+					name = "Flamenco Hat", 
+					model_handle = "FlamencoHat", 
+					cost = 500, 
+					image = "rbxassetid://4849976218", 
+					rarity = "rare"
+				}, 
+				newsboy_cap = {
+					name = "Newsboy Cap", 
+					model_handle = "NewsboyCap", 
+					cost = 150, 
+					image = "rbxassetid://4849976840", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pirate_hat = {
+					name = "Pirate Hat", 
+					model_handle = "PirateHat", 
+					cost = 750, 
+					image = "rbxassetid://4849977514", 
+					rarity = "rare"
+				}, 
+				icey_aura = {
+					name = "Icey Aura", 
+					model_handle = "IceyAura", 
+					cost = 600, 
+					image = "rbxassetid://4849976581", 
+					rarity = "rare"
+				}, 
+				fancy_top_hat = {
+					name = "Fancy Top Hat", 
+					model_handle = "FancyTopHat", 
+					cost = 750, 
+					image = "rbxassetid://4849976160", 
+					rarity = "rare"
+				}, 
+				propeller_hat = {
+					name = "Propeller Hat", 
+					model_handle = "PropellerHat", 
+					cost = 500, 
+					image = "rbxassetid://4849977607", 
+					rarity = "rare"
+				}, 
+				santa_hat = {
+					name = "Santa Hat", 
+					model_handle = "SantaHat", 
+					image = "rbxassetid://4850382817", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				elf_hat = {
+					name = "Elf Hat", 
+					model_handle = "ElfHat", 
+					image = "rbxassetid://4850383048", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pink_cat_ear_headphones = {
+					name = "Pink Cat Ear Headphones", 
+					model_handle = "PinkCatEarHeadphones", 
+					cost = 1750, 
+					image = "rbxassetid://4849979637", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				blue_cat_ear_headphones = {
+					name = "Blue Cat Ear Headphones", 
+					model_handle = "BlueCatEarHeadphones", 
+					cost = 1750, 
+					image = "rbxassetid://4849980085", 
+					rarity = "ultra_rare"
+				}, 
+				headset = {
+					name = "Headset", 
+					model_handle = "Headset", 
+					cost = 300, 
+					image = "rbxassetid://4849979572", 
+					rarity = "uncommon"
+				}, 
+				golden_headset = {
+					name = "Golden Headset", 
+					model_handle = "GoldenHeadset", 
+					cost = 750, 
+					image = "rbxassetid://4849979471", 
+					rarity = "rare"
+				}, 
+				pink_lotus = {
+					name = "Pink Lotus", 
+					model_handle = "PinkLotus", 
+					cost = 200, 
+					image = "rbxassetid://4849977427", 
+					rarity = "uncommon"
+				}, 
+				green_lotus = {
+					name = "Green Lotus", 
+					model_handle = "GreenLotus", 
+					cost = 500, 
+					image = "rbxassetid://4849976420", 
+					rarity = "rare"
+				}, 
+				witch_hat = {
+					name = "Witch Hat", 
+					model_handle = "WitchHat", 
+					cost = 750, 
+					image = "rbxassetid://4849977314", 
+					rarity = "rare"
+				}, 
+				traffic_cone = {
+					name = "Traffic Cone", 
+					model_handle = "TrafficCone", 
+					cost = 250, 
+					image = "rbxassetid://4849978328", 
+					rarity = "uncommon"
+				}, 
+				pink_cap = {
+					name = "Pink Cap", 
+					model_handle = "PinkCap", 
+					cost = 150, 
+					image = "rbxassetid://4853278362", 
+					rarity = "common"
+				}, 
+				yellow_cap = {
+					name = "Yellow Cap", 
+					model_handle = "YellowCap", 
+					cost = 150, 
+					image = "rbxassetid://4853278407", 
+					rarity = "common"
+				}, 
+				firey_aura = {
+					name = "Firey Aura", 
+					model_handle = "FireyAura", 
+					cost = 500, 
+					image = "rbxassetid://4853278462", 
+					rarity = "rare"
+				}, 
+				shadow_aura = {
+					name = "Shadow Aura", 
+					model_handle = "ShadowAura", 
+					cost = 750, 
+					image = "rbxassetid://4853278537", 
+					rarity = "rare"
+				}, 
+				hype_crown = {
+					name = "Founder's Crown", 
+					model_handle = "CrownOfTheFounder", 
+					image = "rbxassetid://4853278628", 
+					rarity = "rare"
+				}, 
+				gardener_hat = {
+					name = "Gardener Hat", 
+					model_handle = "GardenerHat", 
+					cost = 125, 
+					image = "rbxassetid://4849976310", 
+					rarity = "common"
+				}, 
+				yellow_beanie = {
+					name = "Yellow Beanie", 
+					model_handle = "YellowBeanie", 
+					cost = 250, 
+					image = "rbxassetid://4849978730", 
+					rarity = "uncommon"
+				}, 
+				adventurers_hood = {
+					name = "Adventurer's Hood", 
+					model_handle = "AdventurersHood", 
+					image = "rbxassetid://4880426741", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pirate_hat_and_friend = {
+					name = "Pirate Hat & Friend", 
+					model_handle = "PirateHatAndFriend", 
+					image = "rbxassetid://4933495502", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				detective_hat = {
+					name = "Detective Hat", 
+					model_handle = "DetectiveHat", 
+					image = "rbxassetid://4968254439", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				monkey_king_crown = {
+					name = "Monkey King Crown", 
+					model_handle = "MonkeyKingCrown", 
+					image = "rbxassetid://5067924890", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				head_tie = {
+					name = "Head Tie", 
+					model_handle = "HeadTie", 
+					image = "rbxassetid://5067924536", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				kitsune_mask = {
+					name = "Kitsune Mask", 
+					model_handle = "KitsuneMask", 
+					image = "rbxassetid://5067924626", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				icepack = {
+					name = "Icepack", 
+					model_handle = "Icepack", 
+					attachment_type = "head_top", 
+					image = "", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true, 
+					donatable = false, 
+					temporary = true
+				}, 
+				black_5_panel_cap = {
+					name = "Black 5 Panel Cap", 
+					model_handle = "Black5PanelCap", 
+					cost = 250, 
+					image = "rbxassetid://5415514537", 
+					rarity = "uncommon"
+				}, 
+				black_cozy_hood = {
+					name = "Black Cozy Hood", 
+					model_handle = "BlackCozyHood", 
+					cost = 200, 
+					image = "rbxassetid://5415514845", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				brown_cozy_hood = {
+					name = "Brown Cozy Hood", 
+					model_handle = "BrownCozyHood", 
+					cost = 125, 
+					image = "rbxassetid://5415516147", 
+					rarity = "common"
+				}, 
+				flowery_hair_bow = {
+					name = "Flowery Hair Bow", 
+					model_handle = "FloweryHairBow", 
+					cost = 500, 
+					image = "rbxassetid://5415517076", 
+					rarity = "rare"
+				}, 
+				fried_egg = {
+					name = "Fried Egg", 
+					model_handle = "FriedEgg", 
+					cost = 150, 
+					image = "rbxassetid://5415517194", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				gold_tiara = {
+					name = "Gold Tiara", 
+					model_handle = "GoldTiara", 
+					cost = 300, 
+					image = "rbxassetid://5415517745", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pink_5_panel_cap = {
+					name = "Pink 5 Panel Cap", 
+					model_handle = "Pink5PanelCap", 
+					cost = 250, 
+					image = "rbxassetid://5415518324", 
+					rarity = "uncommon"
+				}, 
+				platinum_tiara = {
+					name = "Platinum Tiara", 
+					model_handle = "PlatinumTiara", 
+					cost = 750, 
+					image = "rbxassetid://5444711861", 
+					rarity = "rare"
+				}, 
+				pretty_red_bow = {
+					name = "Pretty Red Bow", 
+					model_handle = "PrettyRedBow", 
+					cost = 125, 
+					image = "rbxassetid://5415520664", 
+					rarity = "common"
+				}, 
+				rain_hat = {
+					name = "Rain Hat", 
+					model_handle = "RainHat", 
+					cost = 100, 
+					image = "rbxassetid://5415520831", 
+					rarity = "common"
+				}, 
+				red_butterfly = {
+					name = "Red Butterfly", 
+					model_handle = "RedButterfly", 
+					cost = 150, 
+					image = "rbxassetid://5457769586", 
+					rarity = "common"
+				}, 
+				sunhat = {
+					name = "Sunhat", 
+					model_handle = "Sunhat", 
+					cost = 100, 
+					image = "rbxassetid://5415521995", 
+					rarity = "common"
+				}, 
+				white_cozy_hood = {
+					name = "White Cozy Hood", 
+					model_handle = "WhiteCozyHood", 
+					cost = 200, 
+					image = "rbxassetid://5415516615", 
+					rarity = "uncommon"
+				}, 
+				yellow_5_panel_cap = {
+					name = "Yellow 5 Panel Cap", 
+					model_handle = "Yellow5PanelCap", 
+					cost = 250, 
+					image = "rbxassetid://5415522715", 
+					rarity = "uncommon"
+				}, 
+				hoop_earrings = {
+					name = "Hoop Earrings", 
+					model_handle = "HoopEarrings", 
+					cost = 250, 
+					image = "rbxassetid://5415521592", 
+					rarity = "uncommon", 
+					equip_type = "earrings"
+				}, 
+				sun_and_moon_earrings = {
+					name = "Sun & Moon Earrings", 
+					model_handle = "SunAndMoonEarrings", 
+					cost = 500, 
+					image = "rbxassetid://5415521810", 
+					rarity = "rare", 
+					equip_type = "earrings"
+				}, 
+				amber_earrings = {
+					name = "Amber Earrings", 
+					model_handle = "AmberEarrings", 
+					image = "rbxassetid://5726048254", 
+					rarity = "rare", 
+					equip_type = "earrings", 
+					not_in_hat_shop_rotation = true
+				}, 
+				forgotten_flower = {
+					name = "Forgotten Flower", 
+					model_handle = "ForgottenFlower", 
+					image = "rbxassetid://5726048455", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				leaf_crown = {
+					name = "Leaf Crown", 
+					model_handle = "LeafCrown", 
+					image = "rbxassetid://5810013262", 
+					rarity = "common", 
+					donatable = false, 
+					not_in_hat_shop_rotation = true
+				}, 
+				bewitched_hat = {
+					name = "Bewitched Hat", 
+					model_handle = "BewitchedHat", 
+					cost = 750, 
+					image = "rbxassetid://5881347869", 
+					rarity = "rare"
+				}, 
+				striped_tophat = {
+					name = "Striped Tophat", 
+					model_handle = "StripedTophat", 
+					cost = 100, 
+					image = "rbxassetid://5881348205", 
+					rarity = "common"
+				}, 
+				bear_winter_hat = {
+					name = "Bear Winter Hat", 
+					model_handle = "BearWinterHat", 
+					cost = 150, 
+					image = "rbxassetid://6060998837", 
+					rarity = "common"
+				}, 
+				festive_tree_hat = {
+					name = "Festive Tree Hat", 
+					model_handle = "FestiveTreeHat", 
+					cost = 250, 
+					image = "rbxassetid://6060998776", 
+					rarity = "uncommon"
+				}, 
+				ice_crown = {
+					name = "Ice Crown", 
+					model_handle = "IceCrown", 
+					cost = 1200, 
+					image = "rbxassetid://6060991420", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "gingerbread_2020"
+				}, 
+				white_winter_hat = {
+					name = "White Winter Hat", 
+					model_handle = "WhiteWinterHat", 
+					cost = 150, 
+					image = "rbxassetid://6061459658", 
+					rarity = "common"
+				}, 
+				snowman_winter_hat = {
+					name = "Snowman Winter Hat", 
+					model_handle = "SnowmanWinterHat", 
+					cost = 100, 
+					image = "rbxassetid://6060990819", 
+					rarity = "common"
+				}, 
+				ice_earrings = {
+					name = "Ice Earrings", 
+					model_handle = "IceEarrings", 
+					cost = 1200, 
+					image = "rbxassetid://6060991330", 
+					rarity = "rare", 
+					equip_type = "earrings", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "gingerbread_2020"
+				}, 
+				cherry_earrings = {
+					name = "Cherry Earrings", 
+					model_handle = "CherryEarrings", 
+					cost = 750, 
+					image = "rbxassetid://6380734302", 
+					rarity = "rare", 
+					equip_type = "earrings"
+				}, 
+				bee_hive = {
+					name = "Bee Hive", 
+					model_handle = "BeeHive", 
+					cost = 250, 
+					image = "rbxassetid://6380843886", 
+					rarity = "uncommon"
+				}, 
+				nest = {
+					name = "Nest", 
+					model_handle = "Nest", 
+					cost = 100, 
+					image = "rbxassetid://6380727413", 
+					rarity = "common"
+				}, 
+				antenna = {
+					name = "Antenna", 
+					model_handle = "Antenna", 
+					cost = 150, 
+					image = "rbxassetid://6380734633", 
+					rarity = "common"
+				}, 
+				flower_crown = {
+					name = "Flower Crown", 
+					model_handle = "FlowerCrown", 
+					cost = 500, 
+					image = "rbxassetid://6380734218", 
+					rarity = "rare"
+				}, 
+				strawberry_hat = {
+					name = "Strawberry Hat", 
+					model_handle = "StrawberryHat", 
+					cost = 750, 
+					image = "rbxassetid://6380723429", 
+					rarity = "rare"
+				}, 
+				umbrella_hat = {
+					name = "Umbrella Hat", 
+					model_handle = "UmbrellaHat", 
+					cost = 300, 
+					image = "rbxassetid://6380723364", 
+					rarity = "uncommon"
+				}, 
+				watermelon_hat = {
+					name = "Watermelon Hat", 
+					model_handle = "WatermelonHat", 
+					cost = 150, 
+					image = "rbxassetid://6380723294", 
+					rarity = "common"
+				}, 
+				leprechaun_hat = {
+					name = "Leprechaun Hat", 
+					model_handle = "LeprechaunHat", 
+					cost = 750, 
+					image = "rbxassetid://6380730271", 
+					rarity = "rare"
+				}, 
+				headband = {
+					name = "Headband", 
+					model_handle = "Headband", 
+					cost = 125, 
+					image = "rbxassetid://6404037642", 
+					rarity = "common"
+				}, 
+				froggy_hat = {
+					name = "Froggy Hat", 
+					model_handle = "FroggyHat", 
+					cost = 250, 
+					image = "rbxassetid://6380734014", 
+					rarity = "uncommon"
+				}, 
+				chick_hat = {
+					name = "Chick Hat", 
+					model_handle = "ChickHat", 
+					cost = 250, 
+					image = "rbxassetid://6706592723", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "eggs_2021"
+				}, 
+				egg_barrette = {
+					name = "Egg Barrette", 
+					model_handle = "EggBarrette", 
+					cost = 100, 
+					image = "rbxassetid://6706593596", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "eggs_2021"
+				}, 
+				bunny_ear_tiara = {
+					name = "Bunny Ear Tiara", 
+					model_handle = "BunnyEarTiara", 
+					cost = 600, 
+					image = "rbxassetid://6706595341", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "eggs_2021"
+				}, 
+				growing_flower_hat = {
+					name = "Growing Flower Hat", 
+					model_handle = "GrowingFlowerHat", 
+					image = "rbxassetid://7368039312", 
+					rarity = "legendary", 
+					static_effects = { {
+							effect_type = "play_animation", 
+							options = {
+								anim_name = "GrowingFlowerHatGrow"
+							}
+						}, {
+							effect_type = "play_animation", 
+							options = {
+								anim_name = "GrowingFlowerHatIdle"
+							}
+						} }
+				}, 
+				eco_brown_branch_headphones = {
+					name = "Eco Brown Branch Headphones", 
+					model_handle = "EcoBrownBranchHeadphones", 
+					cost = 1600, 
+					rarity = "ultra_rare", 
+					image = "rbxassetid://7542810947"
+				}, 
+				eco_brown_pinecone_earrings = {
+					name = "Eco Brown Pinecone Earrings", 
+					model_handle = "EcoBrownPineconeEarrings", 
+					cost = 120, 
+					rarity = "common", 
+					image = "rbxassetid://7542822638", 
+					equip_type = "earrings"
+				}, 
+				eco_brown_earth_wizard_hat = {
+					name = "Eco Brown Earth-Wizard Hat", 
+					model_handle = "EcoBrownEarthWizardHat", 
+					cost = 1900, 
+					rarity = "ultra_rare", 
+					image = "rbxassetid://7542814282"
+				}, 
+				eco_red_apple_hat = {
+					name = "Eco Red Apple Hat", 
+					model_handle = "EcoRedAppleHat", 
+					cost = 100, 
+					rarity = "common", 
+					image = "rbxassetid://7542810624"
+				}, 
+				eco_orange_maple_headpiece = {
+					name = "Eco Orange Maple Headpiece", 
+					model_handle = "EcoOrangeMapleHeadpiece", 
+					cost = 140, 
+					rarity = "common", 
+					image = "rbxassetid://7542820771"
+				}, 
+				eco_red_apple_basket_hat = {
+					name = "Eco Red Apple Basket Hat", 
+					model_handle = "EcoRedAppleBasketHat", 
+					cost = 130, 
+					rarity = "common", 
+					image = "rbxassetid://7542810496"
+				}, 
+				eco_orange_maple_earrings = {
+					name = "Eco Orange Maple Earrings", 
+					model_handle = "EcoOrangeMapleEarrings", 
+					cost = 210, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7542810709", 
+					equip_type = "earrings"
+				}, 
+				eco_red_mushroom_hood = {
+					name = "Eco Red Mushroom Hood", 
+					model_handle = "EcoRedMushroomHood", 
+					cost = 750, 
+					rarity = "rare", 
+					image = "rbxassetid://7542821672"
+				}, 
+				eco_blue_recycling_bin_hat = {
+					name = "Eco Blue Recycling Bin Hat", 
+					model_handle = "EcoBlueRecyclingBinHat", 
+					cost = 200, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7542825594"
+				}, 
+				eco_green_vine_barrette = {
+					name = "Eco Green Vine Barrette", 
+					model_handle = "EcoGreenVineBarrette", 
+					cost = 115, 
+					rarity = "common", 
+					image = "rbxassetid://7542828795"
+				}, 
+				eco_grey_origami_boat_hat = {
+					name = "Eco Grey Origami Boat Hat", 
+					model_handle = "EcoGreyOrigamiBoatHat", 
+					cost = 125, 
+					rarity = "common", 
+					image = "rbxassetid://7542821893"
+				}, 
+				eco_green_leaf_afro = {
+					name = "Eco Green Leaf Afro", 
+					model_handle = "EcoGreenLeafAfro", 
+					cost = 240, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7542816175"
+				}, 
+				eco_black_tree_motif_cap = {
+					name = "Eco Black Tree Motif Cap", 
+					model_handle = "EcoBlackTreeMotifCap", 
+					cost = 100, 
+					rarity = "common", 
+					image = "rbxassetid://7543191460"
+				},
+	sunglasses = {
+					name = "Sunglasses", 
+					model_handle = "Sunglasses", 
+					cost = 125, 
+					image = "rbxassetid://4849973004", 
+					rarity = "common"
+				}, 
+				clout_goggles = {
+					name = "Clout Goggles", 
+					model_handle = "CloutGoggles", 
+					cost = 250, 
+					image = "rbxassetid://4849972658", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				cyborg_shades = {
+					name = "Cyborg Shades", 
+					model_handle = "CyborgShades", 
+					cost = 555, 
+					image = "rbxassetid://4849972740", 
+					rarity = "rare"
+				}, 
+				monocle = {
+					name = "Monocle", 
+					model_handle = "Monocle", 
+					cost = 750, 
+					image = "rbxassetid://4849977086", 
+					rarity = "rare"
+				}, 
+				aviators = {
+					name = "Aviators", 
+					model_handle = "Aviators", 
+					cost = 250, 
+					image = "rbxassetid://4849972567", 
+					rarity = "uncommon"
+				}, 
+				pink_heart_glasses = {
+					name = "Pink Heart Glasses", 
+					model_handle = "PinkHeartGlasses", 
+					cost = 500, 
+					image = "rbxassetid://4849972826", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				purple_heart_glasses = {
+					name = "Purple Heart Glasses", 
+					model_handle = "PurpleHeartGlasses", 
+					cost = 250, 
+					image = "rbxassetid://4849972928", 
+					rarity = "uncommon"
+				}, 
+				eyepatch = {
+					name = "Eyepatch", 
+					model_handle = "Eyepatch", 
+					image = "rbxassetid://4933495463", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				respectful_mustache = {
+					name = "Respectful Mustache", 
+					model_handle = "RespectfulMustache", 
+					image = "rbxassetid://4933495361", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				detective_mustache = {
+					name = "Detective Mustache", 
+					model_handle = "DetectiveMustache", 
+					image = "rbxassetid://4978225755", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				thermometer = {
+					name = "Thermometer", 
+					model_handle = "Thermometer", 
+					attachment_type = "face_mouth", 
+					image = "", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true, 
+					donatable = false, 
+					temporary = true
+				}, 
+				clear_glasses = {
+					name = "Clear Glasses", 
+					model_handle = "ClearGlasses", 
+					cost = 150, 
+					image = "rbxassetid://5415516467", 
+					rarity = "common"
+				}, 
+				cute_circle_glasses = {
+					name = "Cute Circle Glasses", 
+					model_handle = "CuteCircleGlasses", 
+					cost = 150, 
+					image = "rbxassetid://5415516746", 
+					rarity = "common"
+				}, 
+				gold_circle_glasses = {
+					name = "Gold Circle Glasses", 
+					model_handle = "GoldCircleGlasses", 
+					cost = 250, 
+					image = "rbxassetid://5415517604", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				prescription_glasses = {
+					name = "Prescription Glasses", 
+					model_handle = "PrescriptionGlasses", 
+					cost = 100, 
+					image = "rbxassetid://5415520468", 
+					rarity = "common"
+				}, 
+				tusks = {
+					name = "Tusks", 
+					model_handle = "Tusks", 
+					image = "rbxassetid://5726048621", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				ski_goggles = {
+					name = "Ski Goggles", 
+					model_handle = "SkiGoggles", 
+					cost = 125, 
+					image = "rbxassetid://6060991012", 
+					rarity = "common"
+				}, 
+				wool_beard = {
+					name = "Wool Beard", 
+					model_handle = "WoolBeard", 
+					cost = 250, 
+					image = "rbxassetid://6060987918", 
+					rarity = "uncommon"
+				}, 
+				daisy_glasses = {
+					name = "Daisy Glasses", 
+					model_handle = "DaisyGlasses", 
+					cost = 250, 
+					image = "rbxassetid://6404037745", 
+					rarity = "uncommon"
+				}, 
+				orange_glasses = {
+					name = "Orange Glasses", 
+					model_handle = "OrangeGlasses", 
+					cost = 200, 
+					image = "rbxassetid://6380727237", 
+					rarity = "uncommon"
+				}, 
+				purple_masquerade_mask = {
+					name = "Purple Masquerade Mask", 
+					model_handle = "PurpleMasqueradeMask", 
+					cost = 750, 
+					image = "rbxassetid://6380727007", 
+					rarity = "rare"
+				}, 
+				red_masquerade_mask = {
+					name = "Red Masquerade Mask", 
+					model_handle = "RedMasqueradeMask", 
+					cost = 750, 
+					image = "rbxassetid://6380847814", 
+					rarity = "rare"
+				}, 
+				spring_glasses = {
+					name = "Spring Glasses", 
+					model_handle = "SpringGlasses", 
+					cost = 300, 
+					image = "rbxassetid://6380723504", 
+					rarity = "uncommon"
+				}, 
+				egg_glasses = {
+					name = "Egg Glasses", 
+					model_handle = "EggGlasses", 
+					cost = 400, 
+					image = "rbxassetid://6706594347", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "eggs_2021"
+				}, 
+				eco_green_leaf_glasses = {
+					name = "Eco Green Leaf Glasses", 
+					model_handle = "EcoGreenLeafGlasses", 
+					cost = 250, 
+					image = "rbxassetid://7542816369", 
+					rarity = "uncommon"
+				}, 
+				eco_orange_pumpkin_eyepatch = {
+					name = "Eco Orange Pumpkin Eyepatch", 
+					model_handle = "EcoOrangePumpkinEyepatch", 
+					cost = 550, 
+					image = "rbxassetid://7542823324", 
+					rarity = "rare"
+				}, 
+				eco_orange_maple_leaf_mustache = {
+					name = "Eco Orange Maple Leaf Mustache", 
+					model_handle = "EcoOrangeMapleLeafMustache", 
+					cost = 100, 
+					image = "rbxassetid://7542817607", 
+					rarity = "common"
+				}, 
+				eco_green_vine_mustache = {
+					name = "Eco Green Vine Mustache", 
+					model_handle = "EcoGreenVineMustache", 
+					cost = 110, 
+					image = "rbxassetid://7542830030", 
+					rarity = "common"
+				},
+	pink_bandana = {
+					name = "Pink Bandana", 
+					model_handle = "PinkBandana", 
+					cost = 100, 
+					image = "rbxassetid://4849980334", 
+					rarity = "common"
+				}, 
+				cowbell = {
+					name = "Cowbell", 
+					model_handle = "Cowbell", 
+					image = "rbxassetid://4849973919", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true, 
+					donatable = false
+				}, 
+				lavender_scarf = {
+					name = "Lavender Scarf", 
+					model_handle = "LavenderScarf", 
+					cost = 250, 
+					image = "rbxassetid://4849973992", 
+					rarity = "uncommon"
+				}, 
+				black_bandana = {
+					name = "Black Bandana", 
+					model_handle = "BlackBandana", 
+					cost = 100, 
+					image = "rbxassetid://4849973753", 
+					rarity = "common"
+				}, 
+				red_collar = {
+					name = "Red Collar", 
+					model_handle = "RedCollar", 
+					cost = 100, 
+					image = "rbxassetid://4849974348", 
+					rarity = "common"
+				}, 
+				white_bandana = {
+					name = "White Bandana", 
+					model_handle = "WhiteBandana", 
+					cost = 100, 
+					image = "rbxassetid://4849974568", 
+					rarity = "common"
+				}, 
+				spike_collar = {
+					name = "Spike Collar", 
+					model_handle = "SpikeCollar", 
+					cost = 500, 
+					image = "rbxassetid://4849974434", 
+					rarity = "rare"
+				}, 
+				black_scarf = {
+					name = "Black Scarf", 
+					model_handle = "BlackScarf", 
+					image = "rbxassetid://4880426690", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				gold_chain = {
+					name = "Gold Chain", 
+					model_handle = "GoldChain", 
+					cost = 650, 
+					image = "rbxassetid://5415517473", 
+					rarity = "rare"
+				}, 
+				pearl_necklace = {
+					name = "Pearl Necklace", 
+					model_handle = "PearlNecklace", 
+					cost = 300, 
+					image = "rbxassetid://5415523249", 
+					rarity = "uncommon"
+				}, 
+				pink_instant_camera = {
+					name = "Pink Instant Camera", 
+					model_handle = "PinkInstantCamera", 
+					cost = 500, 
+					image = "rbxassetid://5415518811", 
+					rarity = "rare"
+				}, 
+				silver_chain = {
+					name = "Silver Chain", 
+					model_handle = "SilverChain", 
+					cost = 300, 
+					image = "rbxassetid://5415521379", 
+					rarity = "uncommon"
+				}, 
+				yellow_instant_camera = {
+					name = "Yellow Instant Camera", 
+					model_handle = "YellowInstantCamera", 
+					cost = 500, 
+					image = "rbxassetid://5415522973", 
+					rarity = "rare"
+				}, 
+				nautilus_shell_necklace = {
+					name = "Nautilus Shell Necklace", 
+					model_handle = "NautilusShell", 
+					image = "rbxassetid://5726048545", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				winter_scarf = {
+					name = "Winter Scarf", 
+					model_handle = "WinterScarf", 
+					cost = 250, 
+					image = "rbxassetid://6060987995", 
+					rarity = "uncommon"
+				}, 
+				neck_ribbon = {
+					name = "Neck Ribbon", 
+					model_handle = "NeckRibbon", 
+					cost = 100, 
+					image = "rbxassetid://6404037541", 
+					rarity = "common"
+				}, 
+				flower_collar = {
+					name = "Flower Collar", 
+					model_handle = "FlowerCollar", 
+					cost = 500, 
+					image = "rbxassetid://6437127230", 
+					rarity = "rare"
+				}, 
+				neckerchief = {
+					name = "Neckerchief", 
+					model_handle = "Neckerchief", 
+					cost = 100, 
+					image = "rbxassetid://6380730677", 
+					rarity = "common"
+				}, 
+				purple_and_green_beads = {
+					name = "Purple & Green Beads", 
+					model_handle = "PurpleAndGreenBeads", 
+					cost = 150, 
+					image = "rbxassetid://6380727102", 
+					rarity = "uncommon"
+				}, 
+				red_and_yellow_beads = {
+					name = "Red & Yellow Beads", 
+					model_handle = "RedAndYellowBeads", 
+					cost = 150, 
+					image = "rbxassetid://6380726814", 
+					rarity = "uncommon"
+				}, 
+				ivy_necklace = {
+					name = "Ivy Necklace", 
+					model_handle = "IvyNecklace", 
+					cost = 150, 
+					image = "rbxassetid://6380730464", 
+					rarity = "common"
+				}, 
+				eco_glowing_lightbulb_necklace = {
+					name = "Eco Glowing Lightbulb Necklace", 
+					model_handle = "EcoGlowingLightbulbNecklace", 
+					cost = 115, 
+					image = "rbxassetid://7542819074", 
+					rarity = "common"
+				}, 
+				eco_orange_maple_leaf_scarf = {
+					name = "Eco Orange Maple Leaf Scarf", 
+					model_handle = "EcoOrangeMapleLeafScarf", 
+					cost = 280, 
+					image = "rbxassetid://7542817978", 
+					rarity = "uncommon"
+				},
+	red_bowtie = {
+					name = "Red Bowtie", 
+					model_handle = "RedBowtie", 
+					cost = 100, 
+					image = "rbxassetid://4849974868", 
+					rarity = "common"
+				}, 
+				pink_bowtie = {
+					name = "Pink Bowtie", 
+					model_handle = "PinkBowtie", 
+					cost = 100, 
+					image = "rbxassetid://4849974786", 
+					rarity = "common"
+				}, 
+				black_bowtie = {
+					name = "Black Bowtie", 
+					model_handle = "BlackBowtie", 
+					cost = 100, 
+					image = "rbxassetid://4849974697", 
+					rarity = "common"
+				}, 
+				white_bowtie = {
+					name = "White Bowtie", 
+					model_handle = "WhiteBowtie", 
+					image = "rbxassetid://4849977168", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true, 
+					donatable = false
+				}, 
+				striped_necktie = {
+					name = "Striped Necktie", 
+					model_handle = "StripedNecktie", 
+					cost = 200, 
+					image = "rbxassetid://4849975012", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				red_necktie = {
+					name = "Red Necktie", 
+					model_handle = "RedNecktie", 
+					cost = 100, 
+					image = "rbxassetid://4849974932", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				ruff = {
+					name = "Ruff", 
+					model_handle = "Ruff", 
+					image = "rbxassetid://4933495425", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				eco_yellow_corncob_bowtie = {
+					name = "Eco Yellow Corncob Bowtie", 
+					model_handle = "EcoYellowCorncobBowtie", 
+					cost = 150, 
+					image = "rbxassetid://7542813230", 
+					rarity = "common"
+				},
+	k9_badge = {
+					name = "Star Badge", 
+					model_handle = "StarBadge", 
+					cost = 650, 
+					image = "rbxassetid://5228763951", 
+					rarity = "rare"
+				}, 
+				pocket_protector = {
+					name = "Pocket Protector", 
+					model_handle = "PocketProtector", 
+					cost = 100, 
+					image = "rbxassetid://4849978903", 
+					rarity = "common"
+				}, 
+				number_one_ribbon = {
+					name = "#1 Ribbon", 
+					model_handle = "NumberOneRibbon", 
+					cost = 250, 
+					image = "rbxassetid://4849978964", 
+					rarity = "uncommon"
+				}, 
+				jeffs_nametag = {
+					name = "Jeff's Nametag", 
+					model_handle = "JeffsNametag", 
+					cost = 500, 
+					image = "rbxassetid://4849979214", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				bi_pride_pin = {
+					name = "Bi Pride Pin", 
+					model_handle = "BiPridePin", 
+					image = "rbxassetid://5415514294", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				enby_pride_pin = {
+					name = "Enby Pride Pin", 
+					model_handle = "EnbyPridePin", 
+					image = "rbxassetid://5415516935", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				gay_pride_pin = {
+					name = "Gay Pride Pin", 
+					model_handle = "GayPridePin", 
+					image = "rbxassetid://5415517354", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				lesbian_pride_pin = {
+					name = "Lesbian Pride Pin", 
+					model_handle = "LesbianPridePin", 
+					image = "rbxassetid://9406023514", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pan_pride_pin = {
+					name = "Pan Pride Pin", 
+					model_handle = "PanPridePin", 
+					image = "rbxassetid://5459218920", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				trans_pride_pin = {
+					name = "Trans Pride Pin", 
+					model_handle = "TransPridePin", 
+					image = "rbxassetid://5415522173", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				ace_pride_pin = {
+					name = "Ace Pride Pin", 
+					model_handle = "AcePridePin", 
+					image = "rbxassetid://5464334279", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				beaked_whale_badge = {
+					name = "Beaked Whale Badge", 
+					model_handle = "BeakedWhaleBadge", 
+					image = "rbxassetid://6906062681", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				beluga_badge = {
+					name = "Beluga Badge", 
+					model_handle = "BelugaBadge", 
+					image = "rbxassetid://6906062604", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				dolphin_badge = {
+					name = "Dolphin Badge", 
+					model_handle = "DolphinBadge", 
+					image = "rbxassetid://6906062528", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				killer_whale_badge = {
+					name = "Killer Whale Badge", 
+					model_handle = "KillerWhaleBadge", 
+					image = "rbxassetid://6906062457", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				sperm_whale_badge = {
+					name = "Sperm Whale Badge", 
+					model_handle = "SpermWhaleBadge", 
+					image = "rbxassetid://6906062378", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				wdc_badge = {
+					name = "WDC Badge", 
+					model_handle = "WDCBadge", 
+					image = "rbxassetid://6923558512", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				wave_badge = {
+					name = "Wave Badge", 
+					model_handle = "WaveBadge", 
+					image = "rbxassetid://6906062307", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				whale_badge = {
+					name = "Whale Badge", 
+					model_handle = "WhaleBadge", 
+					image = "rbxassetid://6906062158", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				agender_pride_pin = {
+					name = "Agender Pride Pin", 
+					model_handle = "AgenderPridePin", 
+					image = "rbxassetid://6927701246", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				aromantic_pride_pin = {
+					name = "Aromantic Pride Pin", 
+					model_handle = "AromanticPridePin", 
+					image = "rbxassetid://6927698400", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				demi_pride_pin = {
+					name = "Demi Pride Pin", 
+					model_handle = "DemiPridePin", 
+					image = "rbxassetid://6927698303", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				gay_man_pride_pin = {
+					name = "Gay Man Pride Pin", 
+					model_handle = "GayManPridePin", 
+					image = "rbxassetid://6927698193", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				genderfluid_pride_pin = {
+					name = "Genderfluid Pride Pin", 
+					model_handle = "GenderFluidPridePin", 
+					image = "rbxassetid://6927698099", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				lgbtq_pride_pin = {
+					name = "LGBTQ Pride Pin", 
+					model_handle = "LGBTQPridePin", 
+					image = "rbxassetid://6930594429", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				eco_white_spider_web_badge = {
+					name = "Eco White Spider Web Badge", 
+					model_handle = "EcoWhiteSpiderWebBadge", 
+					image = "rbxassetid://7542827477", 
+					rarity = "common", 
+					not_for_sale = true
+				}, 
+				eco_blue_recycling_bin_badge = {
+					name = "Eco Blue Recycling Bin Badge", 
+					model_handle = "EcoBlueRecyclingBinBadge", 
+					rarity = "common", 
+					image = "rbxassetid://7542825431", 
+					not_for_sale = true
+				}, 
+				eco_green_vine_badge = {
+					name = "Eco Green Vine Badge", 
+					model_handle = "EcoGreenVineBadge", 
+					image = "rbxassetid://7542828472", 
+					rarity = "common", 
+					not_for_sale = true
+				},
+	angel_wings = {
+					name = "Angel Wings", 
+					model_handle = "AngelWings", 
+					image = "rbxassetid://4849973461", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true, 
+					not_for_sale = true
+				}, 
+				bat_wings = {
+					name = "Bat Wings", 
+					model_handle = "BatWings", 
+					cost = 2000, 
+					image = "rbxassetid://4849973554", 
+					rarity = "ultra_rare"
+				}, 
+				jade_moth_wings = {
+					name = "Jade Moth Wings", 
+					model_handle = "JadeMothWings", 
+					cost = 2000, 
+					image = "rbxassetid://4849973617", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				shadow_wings = {
+					name = "Shadow Wings", 
+					model_handle = "ShadowWings", 
+					image = "rbxassetid://4849973681", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true, 
+					not_for_sale = true
+				}, 
+				blue_backpack = {
+					name = "Blue Backpack", 
+					model_handle = "BlueBackpack", 
+					cost = 150, 
+					image = "rbxassetid://4849979291", 
+					rarity = "common"
+				}, 
+				first_aid_bag = {
+					name = "First Aid Bag", 
+					model_handle = "FirstAidBag", 
+					cost = 300, 
+					image = "rbxassetid://4849979365", 
+					rarity = "uncommon"
+				}, 
+				turtle_shell = {
+					name = "Turtle Shell", 
+					model_handle = "TurtleShell", 
+					cost = 500, 
+					image = "rbxassetid://4849976985", 
+					rarity = "rare"
+				}, 
+				shark_fin = {
+					name = "Shark Fin", 
+					model_handle = "SharkFin", 
+					cost = 650, 
+					image = "rbxassetid://4849972466", 
+					rarity = "rare"
+				}, 
+				guitar = {
+					name = "Guitar", 
+					model_handle = "Guitar", 
+					cost = 300, 
+					image = "rbxassetid://4849979763", 
+					rarity = "uncommon"
+				}, 
+				sushi_skateboard = {
+					name = "Sushi Skateboard", 
+					model_handle = "SushiSkateboard", 
+					image = "rbxassetid://4849976090", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true, 
+					not_for_sale = true
+				}, 
+				buzz_off_skateboard = {
+					name = "Buzz Off! Skateboard", 
+					model_handle = "BuzzOffSkateboard", 
+					cost = 750, 
+					image = "rbxassetid://4849978837", 
+					rarity = "rare"
+				}, 
+				windup_key = {
+					name = "Windup Key", 
+					model_handle = "WindupKey", 
+					cost = 750, 
+					image = "rbxassetid://4849979019", 
+					rarity = "rare"
+				}, 
+				shuriken = {
+					name = "Shuriken", 
+					model_handle = "Shuriken", 
+					cost = 300, 
+					image = "rbxassetid://4849973100", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true
+				}, 
+				shadow_shuriken = {
+					name = "Shadow Shuriken", 
+					model_handle = "ShadowShuriken", 
+					cost = 300, 
+					image = "rbxassetid://4849980009", 
+					rarity = "rare"
+				}, 
+				moon_tome = {
+					name = "Moon Tome", 
+					model_handle = "MoonTome", 
+					cost = 1500, 
+					image = "rbxassetid://4849979887", 
+					rarity = "ultra_rare"
+				}, 
+				sun_tome = {
+					name = "Sun Tome", 
+					model_handle = "SunTome", 
+					cost = 1500, 
+					image = "rbxassetid://4849975162", 
+					rarity = "ultra_rare"
+				}, 
+				watermelon_backpack = {
+					name = "Watermelon Backpack", 
+					model_handle = "WatermelonBackpack", 
+					cost = 500, 
+					image = "rbxassetid://4849978035", 
+					rarity = "rare"
+				}, 
+				skeleton_shell = {
+					name = "Skeleton Shell", 
+					model_handle = "SkeletonShell", 
+					cost = 650, 
+					image = "rbxassetid://4849974099", 
+					rarity = "rare"
+				}, 
+				briefcase = {
+					name = "Briefcase", 
+					model_handle = "BriefCase", 
+					cost = 200, 
+					image = "rbxassetid://4880426624", 
+					rarity = "uncommon", 
+					not_in_hat_shop_rotation = true, 
+					not_for_sale = true
+				}, 
+				luggage = {
+					name = "Luggage", 
+					model_handle = "Luggage", 
+					cost = 300, 
+					image = "rbxassetid://4853278902", 
+					rarity = "uncommon"
+				}, 
+				adventurers_sword = {
+					name = "Adventurer's Sword", 
+					model_handle = "AdventurersSword", 
+					image = "rbxassetid://4880426585", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				cutlass = {
+					name = "Cutlass", 
+					model_handle = "Cutlass", 
+					image = "rbxassetid://4936545219", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				magnifying_glass = {
+					name = "Magnifying Glass", 
+					model_handle = "MagnifyingGlass", 
+					image = "rbxassetid://4968254373", 
+					rarity = "common", 
+					not_in_hat_shop_rotation = true
+				}, 
+				black_designer_backpack = {
+					name = "Black Designer Backpack", 
+					model_handle = "BlackDesignerBackpack", 
+					cost = 1500, 
+					image = "rbxassetid://5415515017", 
+					rarity = "ultra_rare"
+				}, 
+				black_purse = {
+					name = "Black Purse", 
+					model_handle = "BlackPurse", 
+					cost = 250, 
+					image = "rbxassetid://5415515507", 
+					rarity = "uncommon"
+				}, 
+				blue_butterfly_wings = {
+					name = "Blue Butterfly Wings", 
+					model_handle = "BlueButterflyWings", 
+					cost = 2000, 
+					image = "rbxassetid://5444594385", 
+					rarity = "ultra_rare"
+				}, 
+				cassette = {
+					name = "Cassette", 
+					model_handle = "Cassette", 
+					cost = 500, 
+					image = "rbxassetid://5415516304", 
+					rarity = "rare"
+				}, 
+				handheld = {
+					name = "Handheld", 
+					model_handle = "Handheld", 
+					cost = 500, 
+					image = "rbxassetid://5444594659", 
+					rarity = "rare"
+				}, 
+				jetpack = {
+					name = "Jetpack", 
+					model_handle = "Jetpack", 
+					cost = 1750, 
+					image = "rbxassetid://5415517859", 
+					rarity = "ultra_rare"
+				}, 
+				pink_butterfly_wings = {
+					name = "Pink Butterfly Wings", 
+					model_handle = "PinkButterflyWings", 
+					cost = 2000, 
+					image = "rbxassetid://5444594884", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pink_designer_backpack = {
+					name = "Pink Designer Backpack", 
+					model_handle = "PinkDesignerBackpack", 
+					cost = 300, 
+					image = "rbxassetid://5415518613", 
+					rarity = "uncommon"
+				}, 
+				red_purse = {
+					name = "Red Purse", 
+					model_handle = "RedPurse", 
+					cost = 250, 
+					image = "rbxassetid://5415520972", 
+					rarity = "uncommon"
+				}, 
+				white_designer_backpack = {
+					name = "White Designer Backpack", 
+					model_handle = "WhiteDesignerBackpack", 
+					cost = 1500, 
+					image = "rbxassetid://5415522308", 
+					rarity = "ultra_rare"
+				}, 
+				white_purse = {
+					name = "White Purse", 
+					model_handle = "WhitePurse", 
+					cost = 250, 
+					image = "rbxassetid://5415522533", 
+					rarity = "uncommon"
+				}, 
+				yellow_designer_backpack = {
+					name = "Yellow Designer Backpack", 
+					model_handle = "YellowDesignerBackpack", 
+					cost = 300, 
+					image = "rbxassetid://5415522859", 
+					rarity = "uncommon"
+				}, 
+				bone_wings = {
+					name = "Bone Wings", 
+					model_handle = "BoneWings", 
+					image = "rbxassetid://5726048365", 
+					rarity = "legendary", 
+					not_in_hat_shop_rotation = true
+				}, 
+				scythe = {
+					name = "Scythe", 
+					model_handle = "Scythe", 
+					cost = 250, 
+					image = "rbxassetid://5881348094", 
+					rarity = "uncommon"
+				}, 
+				witch_broom = {
+					name = "Witch Broom", 
+					model_handle = "WitchBroom", 
+					cost = 250, 
+					image = "rbxassetid://5881347991", 
+					rarity = "uncommon"
+				}, 
+				vampire_cape = {
+					name = "Vampire Cape", 
+					model_handle = "VampireCape", 
+					cost = 150, 
+					image = "rbxassetid://5881348345", 
+					rarity = "common"
+				}, 
+				ice_wings = {
+					name = "Ice Wings", 
+					model_handle = "IceWings", 
+					cost = 2000, 
+					image = "rbxassetid://6060991245", 
+					rarity = "ultra_rare", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "gingerbread_2020"
+				}, 
+				skis = {
+					name = "Skis", 
+					model_handle = "Skis", 
+					cost = 150, 
+					image = "rbxassetid://6060990946", 
+					rarity = "common"
+				}, 
+				red_back_ribbon = {
+					name = "Red Back Ribbon", 
+					model_handle = "RedBackRibbon", 
+					cost = 100, 
+					image = "rbxassetid://6467719713", 
+					rarity = "common"
+				}, 
+				bug_net = {
+					name = "Bug Net", 
+					model_handle = "BugNet", 
+					cost = 150, 
+					image = "rbxassetid://6380734401", 
+					rarity = "common"
+				}, 
+				orange_backpack = {
+					name = "Orange Backpack", 
+					model_handle = "OrangeBackpack", 
+					cost = 250, 
+					image = "rbxassetid://6404037449", 
+					rarity = "uncommon"
+				}, 
+				bee_wings = {
+					name = "Bee Wings", 
+					model_handle = "BeeWings", 
+					cost = 1500, 
+					image = "rbxassetid://6380734557", 
+					rarity = "ultra_rare"
+				}, 
+				leaf_wings = {
+					name = "Leaf Wings", 
+					model_handle = "LeafWings", 
+					cost = 2000, 
+					image = "rbxassetid://6380730364", 
+					rarity = "ultra_rare"
+				}, 
+				picnic_basket = {
+					name = "Picnic Basket", 
+					model_handle = "PicnicBasket", 
+					cost = 250, 
+					image = "rbxassetid://6380727177", 
+					rarity = "uncommon"
+				}, 
+				sketchbook = {
+					name = "Sketchbook", 
+					model_handle = "Sketchbook", 
+					cost = 150, 
+					image = "rbxassetid://6380723672", 
+					rarity = "common"
+				}, 
+				chick_backpack = {
+					name = "Chick Backpack", 
+					model_handle = "ChickBackpack", 
+					cost = 250, 
+					image = "rbxassetid://6706591422", 
+					rarity = "rare", 
+					not_in_hat_shop_rotation = true, 
+					currency_id = "eggs_2021"
+				}, 
+				eco_orange_leaf_wings = {
+					name = "Eco Orange Leaf Wings", 
+					model_handle = "EcoOrangeLeafWings", 
+					cost = 300, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7542810810"
+				}, 
+				eco_orange_maple_cape = {
+					name = "Eco Orange Maple Cape", 
+					model_handle = "EcoOrangeMapleCape", 
+					cost = 1850, 
+					rarity = "ultra_rare", 
+					image = "rbxassetid://7542820583"
+				}, 
+				eco_brown_hiking_backpack = {
+					name = "Eco Brown Hiking Backpack", 
+					model_handle = "EcoBrownHikingBackpack", 
+					cost = 600, 
+					rarity = "rare", 
+					image = "rbxassetid://7542815049"
+				}, 
+				eco_red_cranberry_branch_wings = {
+					name = "Eco Red Cranberry Branch Wings", 
+					model_handle = "EcoRedCranberryBranchWings", 
+					cost = 725, 
+					rarity = "rare", 
+					image = "rbxassetid://7542813412"
+				}, 
+				eco_orange_pumpkin_pie_wings = {
+					name = "Eco Orange Pumpkin Pie Wings", 
+					model_handle = "EcoOrangePumpkinPieWings", 
+					cost = 2000, 
+					rarity = "ultra_rare", 
+					image = "rbxassetid://7542824283"
+				}, 
+				eco_blue_solar_panel_backpack = {
+					name = "Eco Blue Solar Panel Backpack", 
+					model_handle = "EcoBlueSolarPanelBackpack", 
+					cost = 290, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7542826699"
+				}, 
+				eco_blue_reusable_bottle_backpack = {
+					name = "Eco Blue Reusable Bottle Backpack", 
+					model_handle = "EcoBlueReusableBottleBackpack", 
+					cost = 300, 
+					rarity = "uncommon", 
+					image = "rbxassetid://7601648534"
+				},
+	black_boots = {
+					name = "Black Boots", 
+					model_handle = "BlackBoots", 
+					cost = 750, 
+					image = "rbxassetid://5415514707", 
+					rarity = "rare", 
+					equip_type = "shoes"
+				}, 
+				black_hightops = {
+					name = "Black Hightops", 
+					model_handle = "BlackHightops", 
+					cost = 1500, 
+					image = "rbxassetid://5415515284", 
+					rarity = "ultra_rare", 
+					equip_type = "shoes"
+				}, 
+				black_sneakers = {
+					name = "Black Sneakers", 
+					model_handle = "BlackSneakers", 
+					cost = 150, 
+					image = "rbxassetid://5415515653", 
+					rarity = "common", 
+					equip_type = "shoes", 
+					not_in_hat_shop_rotation = true
+				}, 
+				blue_sneakers = {
+					name = "Blue Sneakers", 
+					model_handle = "BlueSneakers", 
+					cost = 150, 
+					image = "rbxassetid://5415515800", 
+					rarity = "common", 
+					equip_type = "shoes"
+				}, 
+				pink_boots = {
+					name = "Pink Boots", 
+					model_handle = "PinkBoots", 
+					cost = 750, 
+					image = "rbxassetid://5415518474", 
+					rarity = "rare", 
+					equip_type = "shoes"
+				}, 
+				pink_hightops = {
+					name = "Pink Hightops", 
+					model_handle = "PinkHightops", 
+					cost = 1500, 
+					image = "rbxassetid://5457768184", 
+					rarity = "ultra_rare", 
+					equip_type = "shoes", 
+					not_in_hat_shop_rotation = true
+				}, 
+				pink_sneakers = {
+					name = "Pink Sneakers", 
+					model_handle = "PinkSneakers", 
+					cost = 150, 
+					image = "rbxassetid://5415520296", 
+					rarity = "common", 
+					equip_type = "shoes"
+				}, 
+				red_sneakers = {
+					name = "Red Sneakers", 
+					model_handle = "RedSneakers", 
+					cost = 150, 
+					image = "rbxassetid://5415521183", 
+					rarity = "common", 
+					equip_type = "shoes"
+				}, 
+				yellow_sneakers = {
+					name = "Yellow Sneakers", 
+					model_handle = "YellowSneakers", 
+					cost = 150, 
+					image = "rbxassetid://5415523115", 
+					rarity = "common", 
+					equip_type = "shoes"
+				}, 
+				witch_boots = {
+					name = "Witch Boots", 
+					model_handle = "WitchBoots", 
+					cost = 300, 
+					image = "rbxassetid://5881348447", 
+					rarity = "uncommon", 
+					equip_type = "shoes"
+				}, 
+				fur_boots = {
+					name = "Fur Boots", 
+					model_handle = "FurBoots", 
+					cost = 750, 
+					image = "rbxassetid://6060998635", 
+					rarity = "rare", 
+					equip_type = "shoes"
+				}, 
+				goth_shoes = {
+					name = "Goth Shoes", 
+					model_handle = "GothShoes", 
+					cost = 750, 
+					image = "rbxassetid://6380730894", 
+					rarity = "rare", 
+					equip_type = "shoes"
+				}, 
+				rain_boots = {
+					name = "Rain Boots", 
+					model_handle = "RainBoots", 
+					cost = 750, 
+					image = "rbxassetid://6404037362", 
+					rarity = "rare", 
+					equip_type = "shoes"
+				}, 
+				socks_and_sandals = {
+					name = "Socks & Sandals", 
+					model_handle = "SocksAndSandals", 
+					cost = 200, 
+					image = "rbxassetid://6380723586", 
+					rarity = "uncommon", 
+					equip_type = "shoes"
+				}, 
+				eco_brown_wooden_clogs = {
+					name = "Eco Brown Wooden Clogs", 
+					model_handle = "EcoBrownWoodenClogs", 
+					cost = 150, 
+					rarity = "common", 
+					image = "rbxassetid://7542831564", 
+					equip_type = "shoes"
+				}
 	}
