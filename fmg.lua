@@ -6169,5 +6169,128 @@
 					rarity = "common", 
 					image = "rbxassetid://7542831564", 
 					equip_type = "shoes"
-				}
+				},
+		smallgift = {
+			image = "rbxassetid://3012204373", 
+			tool = "GiftTool", 
+			model_handle = "SmallGift", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse"
+			}, 
+			uses = 1, 
+			cost = 70, 
+			rarity = "common", 
+			name = "Small Gift"
+		}, 
+		biggift = {
+			image = "rbxassetid://3012204286", 
+			tool = "GiftTool", 
+			model_handle = "BigGift", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse"
+			}, 
+			uses = 1, 
+			cost = 199, 
+			rarity = "rare", 
+			name = "Big Gift"
+		}, 
+		massivegift = {
+			image = "rbxassetid://3012204333", 
+			tool = "GiftTool", 
+			model_handle = "MassiveGift", 
+			anims = {
+				hold = "MassiveGiftHold", 
+				use = "MassiveGiftOpen"
+			}, 
+			uses = 1, 
+			cost = 499, 
+			rarity = "legendary", 
+			name = "Massive Gift"
+		}, 
+		christmas_gift = {
+			image = "rbxassetid://4510475651", 
+			tool = "GiftTool", 
+			model_handle = "ChristmasGift", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse"
+			}, 
+			uses = 1, 
+			rarity = "legendary", 
+			name = "Christmas Gift"
+		}, 
+		golden_gift = {
+			image = "rbxassetid://4510471983", 
+			tool = "GiftTool", 
+			model_handle = "GoldenGift", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse"
+			}, 
+			uses = 1, 
+			rarity = "legendary", 
+			name = "Golden Gift"
+		}, 
+		rat_box = {
+			image = "rbxassetid://4621220017", 
+			tool = "RatBoxTool", 
+			model_handle = "RatBox", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse"
+			}, 
+			rarity = "legendary", 
+			name = "Rat Box"
+		}, 
+		monkey_box = {
+			image = "rbxassetid://5057100696", 
+			tool = "MonkeyBoxTool", 
+			model_handle = "MonkeyBox", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse", 
+				open = "MonkeyBoxOpen"
+			}, 
+			rarity = "rare", 
+			name = "Monkey Box"
+		}, 
+		premium_monkey_box = {
+			image = "rbxassetid://5067925110", 
+			tool = "MonkeyBoxTool", 
+			model_handle = "RareMonkeyBox", 
+			anims = {
+				hold = "PumpkinHold", 
+				use = "PumpkinUse", 
+				open = "MonkeyBoxOpenEpic"
+			}, 
+			rarity = "legendary", 
+			name = "Premium Monkey Box"
+		}, 
+		bat_box = {
+			image = "rbxassetid://5888839551", 
+			tool = "BatBoxTool", 
+			model_handle = "BatBox", 
+			anims = {
+				hold = "HoldingBaby"
+			}, 
+			rarity = "rare", 
+			name = "Bat Box", 
+			currency_id = "candy_2020", 
+			cost = 1000, 
+			not_for_sale = true
+		}, 
+		ox_box = {
+			image = "rbxassetid://6240246974", 
+			tool = "OxBoxTool", 
+			model_handle = "OxBox", 
+			anims = {
+				hold = "HoldingBaby"
+			}, 
+			rarity = "ultra_rare", 
+			name = "Ox Box", 
+			cost = 350, 
+			not_for_sale = true
+		}
 	}
