@@ -30,53 +30,7 @@
 			cost = 10, 
 			rarity = "uncommon", 
 			name = "Pet Treat"
-		}, 
-		pet_riding_potion = {
-			image = "rbxassetid://3342628435", 
-			tool = "MessageTool", 
-			message = "Product Description: Feed this to a pet to make it permanently rideable", 
-			model_handle = "RidingPotion", 
-			anims = {
-				hold = "PotionHold", 
-				use = "PotionDrink"
-			}, 
-			uses = 1, 
-			rarity = "legendary", 
-			name = "Ride-A-Pet Potion (Forever)", 
-			cannot_feed_to_egg = true, 
-			player_must_confirm = true
-		}, 
-		pet_flying_potion = {
-			image = "rbxassetid://4047157976", 
-			tool = "MessageTool", 
-			message = "Product Description: Feed this to a pet to make it permanently flyable", 
-			model_handle = "FlyingPotion", 
-			anims = {
-				hold = "PotionHold", 
-				use = "PotionDrink"
-			}, 
-			uses = 1, 
-			rarity = "legendary", 
-			name = "Fly-A-Pet Potion (Forever)", 
-			cannot_feed_to_egg = true, 
-			player_must_confirm = true
-		}, 
-		pet_grow_potion = {
-			image = "rbxassetid://4601494965", 
-			tool = "MessageTool", 
-			message = "Product Description: Feed this to a pet to make it temporarily bigger", 
-			model_handle = "PetGrowPotion", 
-			anims = {
-				hold = "PotionHold", 
-				use = "PotionDrink"
-			}, 
-			uses = 1, 
-			cost = 350, 
-			rarity = "rare", 
-			name = "Big Brew Potion (10 min)", 
-			cannot_feed_to_egg = true, 
-			studio_test_count = 5
-		}, 
+		},
 		pet_shrink_potion = {
 			image = "rbxassetid://4601495117", 
 			tool = "MessageTool", 
