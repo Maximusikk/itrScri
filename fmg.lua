@@ -6296,5 +6296,69 @@
 		Log_stroller = {
 			image = "rbxassetid://10905075030",
 			name = "Old Lump of Log Stroller"
+		},		
+		Safety_scissors = {
+			image = "rbxassetid://13071049284",
+			name = "Safety Scissors"
+		},
+		Coconut_stroller = {
+			image = "rbxassetid://13078897326",
+			name = "Coconut Stroller"
+		},
+		Thimble_cap = {
+			image = "rbxassetid://13071021002",
+			name = "Thimble Cap"
+		},		
+		Lavender_stock = {
+			image = "rbxassetid://6380687803",
+			name = "Lavender"
+		},
+		Angelic_hook = {
+			image = "rbxassetid://8978760198",
+			name = "Angelic Grappling Hook"
+		},
+		Frostbite_grapple = {
+			image = "rbxassetid://4797806686",
+			name = "Frostbite Grapple"
+		},
+		Chainsaw_rattle = {
+			image = "rbxassetid://10905699969",
+			name = "Chainsaw Rattle"
+		},
+		Bumblebee_hook = {
+			image = "rbxassetid://13078894755",
+			name = "Bumblebee Grappling Hook"
+		},
+		Futuristic_propeller = {
+			image = "rbxassetid://10912970511",
+			name = "Futuristic Turbine Propeller"
+		},
+		Nest_Balloon = {
+			image = "rbxassetid://10982856841",
+			name = "Crow's Nest Balloon"
+		},
+		Viking_shield = {
+			image = "rbxassetid://10967375750",
+			name = "Viking Shield"
+		},
+		Neon_skates = {
+			image = "rbxassetid://13078900263",
+			name = "Neon Skates"
+		},
+		Strawberry_clip = {
+			image = "rbxassetid://12719582077,
+			name = "Strawberry Clip"
+		},
+		Pelican_stroller = {
+			image = "rbxassetid://6936631399",
+			name = "Pelican Stroller"
+		},
+		Harp_hook = {
+			image = "rbxassetid://13078897700",
+			name = "Harp Grappling Hook"
+		},
+		Succulent_plush = {
+			image = "rbxassetid://13078903195",
+			name = "Succulent Plush"
 		}
 	}
