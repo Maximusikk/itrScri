@@ -6346,7 +6346,7 @@
 			name = "Neon Skates"
 		},
 		Strawberry_clip = {
-			image = "rbxassetid://12719582077,
+			image = "rbxassetid://12719582077",
 			name = "Strawberry Clip"
 		},
 		Pelican_stroller = {
