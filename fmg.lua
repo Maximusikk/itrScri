@@ -6348,5 +6348,17 @@
 		Strawberry_clip = {
 			image = "rbxassetid://12719582077",
 			name = "Strawberry Clip"
+		},
+		Pelican_stroller = {
+			image = "rbxassetid://6936631399",
+			name = "Pelican Stroller"
+		},
+		Harp_hook = {
+			image = "rbxassetid://13078897700",
+			name = "Harp Grappling Hook"
+		},
+		Succulent_plush = {
+			image = "rbxassetid://13078903195",
+			name = "Succulent Plush"
 		}
 	}
