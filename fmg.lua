@@ -6332,5 +6332,21 @@
 		Futuristic_propeller = {
 			image = "rbxassetid://10912970511",
 			name = "Futuristic Turbine Propeller"
+		},
+		Nest_Balloon = {
+			image = "rbxassetid://10982856841",
+			name = "Crow's Nest Balloon"
+		},
+		Viking_shield = {
+			image = "rbxassetid://10967375750",
+			name = "Viking Shield"
+		},
+		Neon_skates = {
+			image = "rbxassetid://13078900263",
+			name = "Neon Skates"
+		},
+		Strawberry_clip = {
+			image = "rbxassetid://12719582077",
+			name = "Strawberry Clip"
 		}
 	}
