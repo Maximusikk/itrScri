@@ -3751,7 +3751,20 @@
 			name = "Floppy Bunny Plushie", 
 			cost = 60, 
 			colorable = true
-		},  
+		}, 
+		musical_conch = {
+			image = "rbxassetid://6872763349", 
+			tool = "MusicalInstrumentTool", 
+			model_handle = "MusicalConch", 
+			rarity = "common", 
+			name = "Musical Conch", 
+			anims = {
+				hold = "DidgeridooHold", 
+				use = "DidgeridooPlay"
+			}, 
+			sounds = { "Conch1", "Conch2" }, 
+			donatable = false
+		}, 
 		bees_blaster = {
 			image = "rbxassetid://6959275268", 
 			tool = "FoodCannonTool", 
@@ -6279,5 +6292,9 @@
 			name = "Ox Box", 
 			cost = 350, 
 			not_for_sale = true
+		},
+		Log_stroller = {
+			image = "rbxassetid://10905075030",
+			name = "Old Lump of Log Stroller"
 		}
 	}
