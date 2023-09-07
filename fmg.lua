@@ -6360,5 +6360,52 @@
 		Succulent_plush = {
 			image = "rbxassetid://13078903195",
 			name = "Succulent Plush"
+		},
+		LoveEnvelope_balloon = {
+			image = "rbxassetid://13078898747",
+			name = "Love Envelope Balloon"
+		},
+		HoneyDipper_rattle = {
+			image = "rbxassetid://7368052482",
+			name = "Succulent Plush"
+		},
+
+		BumblebeePogo_stick = {
+			image = "rbxassetid://13078895147",
+			name = "Bumblebee Pogo Stick"
+		},
+
+		Sword_render = {
+			image = "rbxassetid://10967650692",
+			name = "Sword"
+		},
+
+		FlowerMirrorChew_toy = {
+			image = "rbxassetid://8978760822",
+			name = "Flower Mirror Chew Toy"
+		},
+		PancakeThrowing_disc = {
+			image = "rbxassetid://13078902734",
+			name = "Pancake Throwing Disc"
+		},
+
+		Anvil_balloon = {
+			image = "rbxassetid://10905686244",
+			name = "Anvil Balloon"
+		},
+
+		Trike_stroller = {
+			image = "rbxassetid://8994946769",
+			name = "Trike Stroller"
+		},
+
+		LeekChew_toy= {
+			image = "rbxassetid://13078898385",
+			name = "Leek Chew Toy"
+		},
+
+		Modern_unicycle = {
+			image = "rbxassetid://13078899783",
+			name = "Modern Unicycle"
 		}
 	}
