@@ -119,7 +119,7 @@ game.RunService.RenderStepped:Connect(function(frametime)
     local z = radius * math.sin(math.rad(angle)) + Zc
     game.Players.LocalPlayer.Character.Humanoid:Move(Vector3.new(x,0,z))
   local fps = 1/frametime
-  if fps < 8 then 
+  if fps < 5 then 
     print("hmmmmmmm")
   end
   if fps < 25 and fps > 15 then 
