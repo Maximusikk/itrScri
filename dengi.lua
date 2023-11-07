@@ -101,13 +101,13 @@ local runservice = game:GetService("RunService") -- this is the service for the 
 wait(1)
 
 
-game.RunService.RenderStepped:Connect(function ()
+game.RunService.RenderStepped:Connect(function(frametime)
   --if (game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z - default_cframe.Z) > 15 then
   --  angle = 0
   --  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = default_cframe
   --  wait(3)
   --end
-  if angle == 360 then
+  if angle >= 360 then
     if _G.first_360 == nil then
       _G.first_360 = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     end
@@ -118,7 +118,20 @@ game.RunService.RenderStepped:Connect(function ()
     local x = radius * math.cos(math.rad(angle)) + Xc
     local z = radius * math.sin(math.rad(angle)) + Zc
     game.Players.LocalPlayer.Character.Humanoid:Move(Vector3.new(x,0,z))
-  angle = angle + 1.5
+  local fps = 1/frametime
+  if fps < 8 then 
+    print("hmmmmmmm")
+  end
+  if fps < 25 and fps > 10 then 
+    angle = angle + 4
+  end
+  if fps < 35 and fps > 25 then
+    angle = angle + 2
+    print("low rate")
+  else 
+    angle = angle + 1
+  end
+  
 end)
 
 while wait(1) do
