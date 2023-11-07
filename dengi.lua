@@ -118,7 +118,7 @@ game.RunService.RenderStepped:Connect(function ()
     local x = radius * math.cos(math.rad(angle)) + Xc
     local z = radius * math.sin(math.rad(angle)) + Zc
     game.Players.LocalPlayer.Character.Humanoid:Move(Vector3.new(x,0,z))
-  angle = angle + 1
+  angle = angle + 1.5
 end)
 
 while wait(1) do
