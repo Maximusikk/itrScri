@@ -122,8 +122,9 @@ game.RunService.RenderStepped:Connect(function(frametime)
   if fps < 8 then 
     print("hmmmmmmm")
   end
-  if fps < 25 and fps > 10 then 
+  if fps < 25 and fps > 15 then 
     angle = angle + 4
+    print("low rate 2")
   end
   if fps < 35 and fps > 25 then
     angle = angle + 2
