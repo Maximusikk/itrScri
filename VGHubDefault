@@ -1,7 +1,7 @@
 repeat task.wait() until game:IsLoaded()
 local StartTime = tick()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Extras/Anti-Cheat"))()
+
 local A = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maximusikk/itrScri/main/VFhubGames"))()
 
 local BlurEffect = Instance.new("BlurEffect")
