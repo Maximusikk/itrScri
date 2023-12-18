@@ -1,0 +1,369 @@
+Ответ сервера: <!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Оплата товара: Жирные Аккаунты №1  - 17.55₽ шт.</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FlameSv"/>
+		<meta name="viewport" content="width=device-width" />
+
+		<meta property="og:image" content="https://i.ibb.co/MP7bJ4b/2.png"/>
+
+		<meta name="title" content="Жирные Аккаунты №1  | 17.55₽ шт." />
+		<meta name="description" content="Данная база состоит из куки&nbsp;от аккаунтов, как заходить на аккаунты с их помощью смотреть по ссылке ниже:
+https://vk.com/@rbxline-cookie
+
+
+Куки-Рефрешеры: (создают из cookie - новый cookie)
+Новый рефрешер на Германию -&nbsp;http://scary-refresher.com
+Старый рефрешер на Нидерланды -&nbsp;http://thedenver.online
+
+Перед покупкой ознакомьтесь со всей информацией:&nbsp;https://wilddragon.ru/page/1
+
+&nbsp;
+" />
+		
+		 
+		
+			<link rel="stylesheet" href="/assets/_PayPage/justTemplate/style2.css?1">
+			<link rel="stylesheet" href="/assets/_PayPage/justTemplate/style.css?1">
+		
+		
+		<link rel="stylesheet" href="/assets/_PayPage/zTemplate2/css/toastr.css">
+		<link rel="image_src" href="https://i.ibb.co/MP7bJ4b/2.png" />
+	    <link rel="shortcut icon" href="https://i.ibb.co/7JFxxrC/drago-png.png" type="image/x-icon">
+	</head><body>
+	<wrapper>
+		<div class="" style="display: block;display: flex;flex-flow: column;">
+			
+			    <div class="pay-content">
+			      <div class="fixed">
+			        <div class="pay-cols flex">
+			          <div class="pay-col pay-col-left">
+			            <div class="pay-sect">
+			              <div class="pay-sect-title">Информация о товаре</div>
+			              <div class="pay-items">
+			                <div class="pay-item prod-item">
+			                  <div class="pay-item-img prod-item-img" style="background: url('https://i.ibb.co/MP7bJ4b/2.png');background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+			                  <div class="pay-item-cont prod-item-cont flex">
+			                    <div class="pay-item-info prod-item-info">
+			                      <div class="pay-item-title prod-item-title">Жирные Аккаунты №1 </div>
+			                    </div>
+			                    <div class="prod-item-right pay-item-right">
+			                      <div class="pay-item-price prod-item-price inline">Стоимость: 17.55 RUB</div>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+
+			            <div class="pay-sect">
+			              <div class="pay-sect-title">Выберите платежную систему</div>
+			              <div class="pay-systems flex">
+
+							
+								<div method="user_lk_balance"  m_name="С баланса ЛК"  class="method pay-system-item item-box" style="background-image: url(/assets/_PayPage/zTemplate2/img/user_lk_balance.png); background-color: rgba(0, 0, 0, 0.06);" ></div>
+
+							
+
+																																																																																																																																																																																																																																																																																																																																																																																																															<div method="FREEKASSA_NEW"  m_name="FREEKASSA_NEW"  class="method pay-system-item item-box" style="background-image: url(/assets/_PayPage/zTemplate2/img/freekassa_new.png)"></div>
+																																																																																			</div>
+			            </div>
+			          </div>
+			          <div class="pay-col pay-col-right">
+			            <div class="pay-sect-title">Оформление заказа</div>
+			            <div class="pay-form item-box">
+			              <div class="pay-kol">
+			                <div class="pay-kol-text">Количество товара (шт.):</div>
+			                <div class="pay-kol-div">
+			                  <button class="pay-kol-button pay-kol-minus"></button>
+			                  <div class="pay-kol-input"><input name="total" value="1"  secret="count" onchange="calc()" onkeydown="calc()" onkeyup="calc()" pattern="[0-9]"  type="number" step="1" placeholder="В наличии 2638" min="1" max="2638" value="1"></div>
+			                  <button class="pay-kol-button pay-kol-plus"></button>
+			                </div>
+			              </div>
+			              <div class="pay-form-labels form-labels">
+			                <div class="pay-form-label form-label">
+			                  <label>Email*</label>
+			                  <div class="form-input">
+			                    <input onchange="calc()" onkeydown="calc()" onkeyup="calc()"  secret="email" type="text" placeholder="example@mail.ru">
+			                  </div>
+			       				<div class="form-note red">* Цифровой товар отправляется на почту только после скачивания на сайте, не закрывайте страницу с проверкой платежа!</div>
+			                </div>
+			                <div class="pay-form-label form-label" >
+			                  <label>Код скидочного купона</label>
+			                  <div class="form-input form-input-blue">
+			                    <input type="text" name="coupon" secret="code" type="text" placeholder="Если есть" autocomplete="off">
+			                  </div>
+			                </div>
+			                								<div class="pay-form-label form-label">
+				                 <label>Ваш vk для связи [не обязательно]</label>
+				                  <div class="form-input form-input-blue">
+				                    <input type="text" secret="comment" autocomplete="off">
+				                  </div>
+				                </div>
+							
+							<input secret="id" hidden value="3">
+							<input secret="wmr" hidden value="17.55">
+
+
+
+			              </div>
+														<div id="completePaymentsButton">
+					              <button class="form-button" id="completePayment">Перейти к оплате</button>
+							</div>
+							
+
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+
+				<div id="payPage" style="display: none;margin: 20% auto;">
+					<div class="staticModalMiniBlock">
+						<div class="inputs">
+							<input secret="order_link" hidden>
+							<div class="input">
+								<label>Наименование продукта</label>
+								<input type="text" value="Жирные Аккаунты №1 " readonly>
+							</div>
+							<div class="input">
+								<label>Количество</label>
+								<input secret="payCount" type="text" readonly>
+							</div>
+							<div class="input">
+								<label>К оплате</label>
+								<input secret="payPrice" type="text" class="copy" id="payPriceToCopy" data-clipboard-target="#payPriceToCopy" readonly>
+							</div>
+							<div class="input">
+								<label>Кошелек для платежа</label>
+								<input secret="payWallet" type="text" class="copy" id="payWalletToCopy" data-clipboard-target="#payWalletToCopy" readonly>
+							</div>
+							<div class="input">
+								<label>Примечание к платежу</label>
+								<input secret="payDesc" type="text" class="copy" id="payDescToCopy" data-clipboard-target="#payDescToCopy" readonly>
+							</div>
+						</div>
+					</div>
+					<div class="button">
+						<div id="waitOrder" class="form-button">Я оплатил(а) товар</div>
+					</div>
+				</div>
+				<span secret="payDesc" hidden></span>
+				<div id="waitorder" style="display: none">
+					<div class="staticModalMiniBlock">
+						<div class="center">
+                            <div class="wtitle-item-min wtitle-item-name">Внимание идет проверка платежа,<br><B style="color:rgb(255, 0, 0);">не закрывайте эту страницу.</b></div>
+                       		<div class="wtitle-item-min wtitle-item-name">Повторная проверка через: <B style="color:rgb(255, 0, 0);font-size: 0.8em;"><div id="waitTimer"></div></b></div>
+                        	<div class="wtitle-item-min wtitle-item-name">Текущий статус: <B style="color:rgb(255, 0, 0);font-size: 0.8em;"><div id="cresult"> Выполняется поиск платежа </div></b></div>
+
+						</div>
+					</div>
+				</div>
+
+					    <div class="pay-footer">
+		      <div class="fixed">
+		        <div class="pay-footer-cont">
+		          <div class="pay-footer-left">
+		            <a href="/" class="pay-footer-link item-box">Вернуться в магазин</a>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	</wrapper>
+</body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="/assets/_PayPage/zTemplate2/js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+	<script>new ClipboardJS('.copy');</script>
+	<script src="/assets/_PayPage/zTemplate2/js/toastr.js"></script>
+	<script src="/assets/_PayPage/justTemplate/main.js"></script>
+</html>
+Завершаем цикл проверки товаров...
+Начинаем новый цикл проверки товаров...
+Проверка товара 3...
+Ответ сервера: <!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Оплата товара: Жирные Аккаунты №1  - 17.55₽ шт.</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FlameSv"/>
+		<meta name="viewport" content="width=device-width" />
+
+		<meta property="og:image" content="https://i.ibb.co/MP7bJ4b/2.png"/>
+
+		<meta name="title" content="Жирные Аккаунты №1  | 17.55₽ шт." />
+		<meta name="description" content="Данная база состоит из куки&nbsp;от аккаунтов, как заходить на аккаунты с их помощью смотреть по ссылке ниже:
+https://vk.com/@rbxline-cookie
+
+
+Куки-Рефрешеры: (создают из cookie - новый cookie)
+Новый рефрешер на Германию -&nbsp;http://scary-refresher.com
+Старый рефрешер на Нидерланды -&nbsp;http://thedenver.online
+
+Перед покупкой ознакомьтесь со всей информацией:&nbsp;https://wilddragon.ru/page/1
+
+&nbsp;
+" />
+		
+		 
+		
+			<link rel="stylesheet" href="/assets/_PayPage/justTemplate/style2.css?1">
+			<link rel="stylesheet" href="/assets/_PayPage/justTemplate/style.css?1">
+		
+		
+		<link rel="stylesheet" href="/assets/_PayPage/zTemplate2/css/toastr.css">
+		<link rel="image_src" href="https://i.ibb.co/MP7bJ4b/2.png" />
+	    <link rel="shortcut icon" href="https://i.ibb.co/7JFxxrC/drago-png.png" type="image/x-icon">
+	</head><body>
+	<wrapper>
+		<div class="" style="display: block;display: flex;flex-flow: column;">
+			
+			    <div class="pay-content">
+			      <div class="fixed">
+			        <div class="pay-cols flex">
+			          <div class="pay-col pay-col-left">
+			            <div class="pay-sect">
+			              <div class="pay-sect-title">Информация о товаре</div>
+			              <div class="pay-items">
+			                <div class="pay-item prod-item">
+			                  <div class="pay-item-img prod-item-img" style="background: url('https://i.ibb.co/MP7bJ4b/2.png');background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+			                  <div class="pay-item-cont prod-item-cont flex">
+			                    <div class="pay-item-info prod-item-info">
+			                      <div class="pay-item-title prod-item-title">Жирные Аккаунты №1 </div>
+			                    </div>
+			                    <div class="prod-item-right pay-item-right">
+			                      <div class="pay-item-price prod-item-price inline">Стоимость: 17.55 RUB</div>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+
+			            <div class="pay-sect">
+			              <div class="pay-sect-title">Выберите платежную систему</div>
+			              <div class="pay-systems flex">
+
+							
+								<div method="user_lk_balance"  m_name="С баланса ЛК"  class="method pay-system-item item-box" style="background-image: url(/assets/_PayPage/zTemplate2/img/user_lk_balance.png); background-color: rgba(0, 0, 0, 0.06);" ></div>
+
+							
+
+																																																																																																																																																																																																																																																																																																																																																																																																															<div method="FREEKASSA_NEW"  m_name="FREEKASSA_NEW"  class="method pay-system-item item-box" style="background-image: url(/assets/_PayPage/zTemplate2/img/freekassa_new.png)"></div>
+																																																																																			</div>
+			            </div>
+			          </div>
+			          <div class="pay-col pay-col-right">
+			            <div class="pay-sect-title">Оформление заказа</div>
+			            <div class="pay-form item-box">
+			              <div class="pay-kol">
+			                <div class="pay-kol-text">Количество товара (шт.):</div>
+			                <div class="pay-kol-div">
+			                  <button class="pay-kol-button pay-kol-minus"></button>
+			                  <div class="pay-kol-input"><input name="total" value="1"  secret="count" onchange="calc()" onkeydown="calc()" onkeyup="calc()" pattern="[0-9]"  type="number" step="1" placeholder="В наличии 2638" min="1" max="2638" value="1"></div>
+			                  <button class="pay-kol-button pay-kol-plus"></button>
+			                </div>
+			              </div>
+			              <div class="pay-form-labels form-labels">
+			                <div class="pay-form-label form-label">
+			                  <label>Email*</label>
+			                  <div class="form-input">
+			                    <input onchange="calc()" onkeydown="calc()" onkeyup="calc()"  secret="email" type="text" placeholder="example@mail.ru">
+			                  </div>
+			       				<div class="form-note red">* Цифровой товар отправляется на почту только после скачивания на сайте, не закрывайте страницу с проверкой платежа!</div>
+			                </div>
+			                <div class="pay-form-label form-label" >
+			                  <label>Код скидочного купона</label>
+			                  <div class="form-input form-input-blue">
+			                    <input type="text" name="coupon" secret="code" type="text" placeholder="Если есть" autocomplete="off">
+			                  </div>
+			                </div>
+			                								<div class="pay-form-label form-label">
+				                 <label>Ваш vk для связи [не обязательно]</label>
+				                  <div class="form-input form-input-blue">
+				                    <input type="text" secret="comment" autocomplete="off">
+				                  </div>
+				                </div>
+							
+							<input secret="id" hidden value="3">
+							<input secret="wmr" hidden value="17.55">
+
+
+
+			              </div>
+														<div id="completePaymentsButton">
+					              <button class="form-button" id="completePayment">Перейти к оплате</button>
+							</div>
+							
+
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+
+				<div id="payPage" style="display: none;margin: 20% auto;">
+					<div class="staticModalMiniBlock">
+						<div class="inputs">
+							<input secret="order_link" hidden>
+							<div class="input">
+								<label>Наименование продукта</label>
+								<input type="text" value="Жирные Аккаунты №1 " readonly>
+							</div>
+							<div class="input">
+								<label>Количество</label>
+								<input secret="payCount" type="text" readonly>
+							</div>
+							<div class="input">
+								<label>К оплате</label>
+								<input secret="payPrice" type="text" class="copy" id="payPriceToCopy" data-clipboard-target="#payPriceToCopy" readonly>
+							</div>
+							<div class="input">
+								<label>Кошелек для платежа</label>
+								<input secret="payWallet" type="text" class="copy" id="payWalletToCopy" data-clipboard-target="#payWalletToCopy" readonly>
+							</div>
+							<div class="input">
+								<label>Примечание к платежу</label>
+								<input secret="payDesc" type="text" class="copy" id="payDescToCopy" data-clipboard-target="#payDescToCopy" readonly>
+							</div>
+						</div>
+					</div>
+					<div class="button">
+						<div id="waitOrder" class="form-button">Я оплатил(а) товар</div>
+					</div>
+				</div>
+				<span secret="payDesc" hidden></span>
+				<div id="waitorder" style="display: none">
+					<div class="staticModalMiniBlock">
+						<div class="center">
+                            <div class="wtitle-item-min wtitle-item-name">Внимание идет проверка платежа,<br><B style="color:rgb(255, 0, 0);">не закрывайте эту страницу.</b></div>
+                       		<div class="wtitle-item-min wtitle-item-name">Повторная проверка через: <B style="color:rgb(255, 0, 0);font-size: 0.8em;"><div id="waitTimer"></div></b></div>
+                        	<div class="wtitle-item-min wtitle-item-name">Текущий статус: <B style="color:rgb(255, 0, 0);font-size: 0.8em;"><div id="cresult"> Выполняется поиск платежа </div></b></div>
+
+						</div>
+					</div>
+				</div>
+
+					    <div class="pay-footer">
+		      <div class="fixed">
+		        <div class="pay-footer-cont">
+		          <div class="pay-footer-left">
+		            <a href="/" class="pay-footer-link item-box">Вернуться в магазин</a>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	</wrapper>
+</body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="/assets/_PayPage/zTemplate2/js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+	<script>new ClipboardJS('.copy');</script>
+	<script src="/assets/_PayPage/zTemplate2/js/toastr.js"></script>
+	<script src="/assets/_PayPage/justTemplate/main.js"></script>
+</html>
