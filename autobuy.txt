@@ -1,0 +1,93 @@
+import re
+import time
+import requests
+import concurrent.futures
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from discord_webhook import DiscordWebhook
+import math
+
+webhook_url = 'https://discord.com/api/webhooks/1184506967125938266/VGEy1aap8tcn2K4ev6gtn21e_-Y7t_N2Zv4pF-MxfipzmPiYTChUmt_iqqnOZHdGsbCu'
+
+item_info = {}
+
+# Список айтемов для проверки
+items_to_check = [5, 22]
+
+driver = webdriver.Firefox()
+
+driver.get('https://wilddragon.ru/panel/login')
+WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, 'email')))
+
+email_field = driver.find_element(By.NAME, 'email')
+email_field.send_keys('maksim.antonovrubl@gmail.com')
+
+password_field = driver.find_element(By.NAME, 'password')
+password_field.send_keys('returnnn')
+
+login_button = driver.find_element(By.XPATH, '//input[@value="Войти"]')
+login_button.click()
+WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//li[@class="tip-bottom"]/a/span[@class="text"]')))
+
+balance_element = driver.find_element(By.XPATH, '//li[@class="tip-bottom"]/a/span[@class="text"]')
+
+balance = re.findall(r'\d+\s*\d+,\d+', balance_element.text)[0].replace(' ', '')
+
+print(f"Баллик акка {balance} рубликов")
+
+def check_item(i):
+    url = f'https://wilddragon.ru/item/{i}'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    wait = WebDriverWait(driver, 1)
+    # Находим теги с количеством товара и ценой
+    quantity_tag = soup.find('i', {'class': 'fa fa-thumbs-up'}).parent
+    price_tag = soup.find('div', {'class': 'itemf_price'})
+    if quantity_tag and price_tag:
+        quantity = int(quantity_tag.text.split()[-2])
+        price = price_tag.text.strip()
+        balance2 = balance.replace(',', '.')
+        price2 = price.replace(' РУБ', '')
+        if float(price2) > 30:
+            print("дорога")
+        else:
+            print(f'Айтем {i}: В наличии {quantity} шт., Цена: {price} можно купить {math.floor(float(balance2) / float(price2))}')
+
+            if i not in item_info:
+                item_info[i] = {'quantity': 0, 'price': price, 'notified': False}
+
+            if quantity != item_info[i]['quantity']:
+                item_info[i] = {'quantity': quantity, 'price': price, 'notified': False}
+
+            if quantity > 1 and not item_info[i]['notified']:
+                item_info[i]['notified'] = True
+                webhook = DiscordWebhook(url=webhook_url,
+                                         content=f'@everyone\nИнформация об айтеме изменилась:\n{url}\nВ наличии {quantity} шт., Цена: {price} можно купить {float(balance2) / float(price2)}')
+                driver.get(url)
+                driver.execute_script(f"window.location.href='/payitem/{i}'")
+                webhook.execute()
+                # Вводим количество товара
+                quantity_field = driver.find_element(By.NAME, 'total')
+                quantity_field.clear()
+                quantity_field.send_keys(f'{math.floor(float(balance2) / float(price2))}')  # Введите нужное количество
+
+                # Нажимаем кнопку "С баланса ЛК"
+                balance_button = driver.find_element(By.XPATH, '//div[@method="user_lk_balance"]')
+                balance_button.click()
+
+                # Вводим почту
+                email_field = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'input[secret="email"]')))
+                email_field.send_keys('maksim.antonovrubl@gmail.com')  # Замените на вашу почту
+
+                # Нажимаем кнопку "Перейти к оплате"
+                payment_button = WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.ID, 'completePayment')))
+                payment_button.click()
+
+
+while True:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        executor.map(check_item, items_to_check)
+    time.sleep(0.01)  # Пауза между проверками
