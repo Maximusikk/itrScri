@@ -1,12 +1,3 @@
-local https = game:GetService('HttpService')
-local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ReplicatedFirst = game:GetService("ReplicatedFirst")
-local CoreGui = game:GetService("CoreGui")
-local HttpService = game:GetService("HttpService")
-local Workspace = game:GetService("Workspace")
-local VirtualUser = game:GetService("VirtualUser")
-local Player = Players.LocalPlayer
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 getgenv().Theme = "Midnight"
@@ -108,7 +99,7 @@ Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
 Status.Size = UDim2.new(0, 56, 0, 20)
 Status.Font = Enum.Font.Highway
 Status.FontSize = Enum.FontSize.Size14
-Status.Text = "on"
+Status.Text = "off"
 Status.TextColor3 = Color3.new(0.666667, 0, 0)
 Status.TextScaled = true
 Status.TextSize = 14
@@ -117,82 +108,64 @@ Status.TextWrapped = true
 Status.TextXAlignment = Enum.TextXAlignment.Left
 
 
-local VirtualUser = game:GetService("VirtualUser")
-Player.Idled:connect(
-    function()
-        VirtualUser:ClickButton2(Vector2.new())
-    end
-)
-seconds = 3600
-secondAft = 0
-collectedCoins = 0
-trueCollectCoin = 0
-function LobbyTeleport()
-    for i,v in pairs(Workspace:GetDescendants()) do
-        if v.name == "SpawnLocation" then
-            Player.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
-        end
-    end
-end
+Toggle.MouseButton1Click:connect(function()
+	if Status.Text == "off" then
+		Clipon = true
+		Status.Text = "on"
+		Status.TextColor3 = Color3.new(0,185,0)
+		Stepped = game:GetService("RunService").Stepped:Connect(function()
+			if not Clipon == false then
+				for a, b in pairs(Workspace:GetChildren()) do
+                if b.Name == Plr.Name then
+                for i, v in pairs(Workspace[Plr.Name]:GetChildren()) do
+                if v:IsA("BasePart") then
+                v.CanCollide = false
+                end end end end
+			else
+				Stepped:Disconnect()
+			end
+		end)
+	elseif Status.Text == "on" then
+		Clipon = false
+		Status.Text = "off"
+		Status.TextColor3 = Color3.new(170,0,0)
+	end
+end)
+end)
+Section:NewButton("Infinite yield", "alot of better", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("Dark dex v3", "alot of better", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+Section:NewButton("Btools", "alot of better", function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+Section:NewButton("Click tp (on v keycode, can't be untoggled)", "alot of better", function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
 
-function checkBalance()
-    for you, jej in pairs(Player:GetDescendants()) do
-        if jej.Name == "CoinBag" then
-            for fit, nig in pairs(jej:GetDescendants()) do
-                if nig.Name == "CoinIcon" then
-                    for trem, kela in pairs(nig:GetDescendants()) do
-                        if kela.Name == "Coins" then
-                            print(kela.Text)
-                            if collectedCoins ~= tonumber(kela.Text) then
-                                trueCollectCoin = trueCollectCoin + 1
-                                print(trueCollectCoin)
-                            end
-                            collectedCoins = tonumber(kela.text)
-                            print(collectedCoins)
-                        end
-                    end
-                end
-            end
-        end
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+local noclipplayer = game:GetService("Players").LocalPlayer
+local noclipmouse = noclipplayer:GetMouse()
+ 
+local donoclip = false
+local noclip = false
+ 
+function b_noclip(key)
+    if (key == "v") then
+	 local pos = mouse.Hit+Vector3.new(0,2.5,0)
+	pos = CFrame.new(pos.X,pos.Y,pos.Z)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
     end
 end
+ 
+noclipmouse.KeyDown:connect(b_noclip)
+end)
 
-function teleportToMoney()
-    for i,v in pairs(Workspace:GetDescendants()) do
-        if v.name == "Christmas" then
-            for kek, lel in pairs(v:GetDescendants()) do
-                if lel.name == "Coin_Server" then   
-                    checkBalance()     
-                    wait(1.7)
-                    x = lel.Position.x
-                    y = lel.Position.y
-                    z = lel.Position.z 
-                    Player.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
-                    game.Players.LocalPlayer.Character.Humanoid.Jump = true
-                    wait(0.8)
-                    pcall(LobbyTeleport)
-                end
-            end
-        end
-        if v.name == "Normal" then
-            for kek, lel in pairs(v:GetDescendants()) do
-                if lel.name == "Coin_Server" then
-                    checkBalance()
-                    wait(1.7)
-                    x = lel.Position.x
-                    y = lel.Position.y
-                    z = lel.Position.z 
-                    Player.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
-                    game.Players.LocalPlayer.Character.Humanoid.Jump = true
-                    wait(0.8)
-                    pcall(LobbyTeleport)
-                end
-            end
-        end
-    end
-end
-
-while wait(1) do
-    secondAft = secondAft + 1
-    pcall(teleportToMoney)
-end
+Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.L, function()
+	Library:ToggleUI()
+end)
