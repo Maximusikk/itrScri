@@ -11,8 +11,15 @@ local StatusPF = Instance.new("TextLabel")
 local Status = Instance.new("TextLabel")
 local Plr = Players.LocalPlayer
 local Clipon = false
-
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ReplicatedFirst = game:GetService("ReplicatedFirst")
+local CoreGui = game:GetService("CoreGui")
+local HttpService = game:GetService("HttpService")
+local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
+local Player = Players.LocalPlayer
+local VirtualUser = game:GetService("VirtualUser")
+
 Player.Idled:connect(
     function()
         VirtualUser:ClickButton2(Vector2.new())
