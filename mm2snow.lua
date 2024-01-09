@@ -12,6 +12,13 @@ local Status = Instance.new("TextLabel")
 local Plr = Players.LocalPlayer
 local Clipon = false
 
+local VirtualUser = game:GetService("VirtualUser")
+Player.Idled:connect(
+    function()
+        VirtualUser:ClickButton2(Vector2.new())
+    end
+)
+
 Noclip.Name = "Script"
 Noclip.Parent = game.CoreGui
 
@@ -39,11 +46,6 @@ Title.TextSize = 30
 Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.TextStrokeTransparency = 0
 
-
-repeat wait() until game:IsLoaded()
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-end)
 seconds = 3600
 secondAft = 0
 collectedCoins = 0
