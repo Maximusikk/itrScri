@@ -40,12 +40,10 @@ Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.TextStrokeTransparency = 0
 
 
-local VirtualUser = game:GetService("VirtualUser")
-Player.Idled:connect(
-    function()
-        VirtualUser:ClickButton2(Vector2.new())
-    end
-)
+repeat wait() until game:IsLoaded()
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+end)
 seconds = 3600
 secondAft = 0
 collectedCoins = 0
