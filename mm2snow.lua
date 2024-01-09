@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Maximusikk/itrScri/main/discordtxt.lua", true))()
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
@@ -36,5 +37,5 @@ Title.FontSize = Enum.FontSize.Size32
 Title.TextSize = 30
 Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.TextStrokeTransparency = 0
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Maximusikk/itrScri/main/discordtxt.lua", true))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Maximusikk/itrScri/main/mm2snow.lua", true))()
