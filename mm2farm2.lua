@@ -1,28 +1,3 @@
-
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-getgenv().Theme = "Midnight"
---[[
-    LightTheme
-    DarkTheme
-    GrapeTheme
-    BloodTheme
-    Ocean
-    Midnight
-    Sentinel
-    Synapse
-]]
-
-local Window = Library.CreateLib("Multitool", getgenv().Theme)
-local Tab = Window:NewTab("LocalPlayer")
-local Section = Tab:NewSection("Speed")
-local NoclipIs = false
-Section:NewSlider("speed slider", "Yo", 500, 0, function(speed)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-end)
-Section:NewSlider("Jump power slider", "Yo", 500, 0, function(speed)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = speed
-end)
-Section:NewButton("Noclip", "alot of better", function()
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
@@ -130,42 +105,4 @@ Toggle.MouseButton1Click:connect(function()
 		Status.Text = "off"
 		Status.TextColor3 = Color3.new(170,0,0)
 	end
-end)
-end)
-Section:NewButton("Infinite yield", "alot of better", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-Section:NewButton("Dark dex v3", "alot of better", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
-end)
-Section:NewButton("Btools", "alot of better", function()
-	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
-end)
-Section:NewButton("Click tp (on v keycode, can't be untoggled)", "alot of better", function()
-	mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Click Teleport"
-
-tool.Parent = game.Players.LocalPlayer.Backpack
-
-local noclipplayer = game:GetService("Players").LocalPlayer
-local noclipmouse = noclipplayer:GetMouse()
- 
-local donoclip = false
-local noclip = false
- 
-function b_noclip(key)
-    if (key == "v") then
-	 local pos = mouse.Hit+Vector3.new(0,2.5,0)
-	pos = CFrame.new(pos.X,pos.Y,pos.Z)
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-    end
-end
- 
-noclipmouse.KeyDown:connect(b_noclip)
-end)
-
-Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.L, function()
-	Library:ToggleUI()
 end)
