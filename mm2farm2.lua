@@ -1,108 +1,107 @@
-local Workspace = game:GetService("Workspace")
-local CoreGui = game:GetService("CoreGui")
-local Players = game:GetService("Players")
-local Noclip = Instance.new("ScreenGui")
-local BG = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local Toggle = Instance.new("TextButton")
-local StatusPF = Instance.new("TextLabel")
-local Status = Instance.new("TextLabel")
-local Plr = Players.LocalPlayer
-local Clipon = false
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Giga Hub", "Midnight")
+local Tab = Window:NewTab("LT2")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Butter v2", "best script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/lt2'))("")
+end)
+Section:NewButton("Dark X", "mod wood", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/darkxwin/darkxsourcethinkyoutousedarkx/main/darkx")()
+end)
+local Tab = Window:NewTab("BABFT")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Neverlose", "Key Test/Beta/Delta", function()
+    -- Build A Boat
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Neverlose-UI/main/Scripts/Build%20A%20Boat.lua"))()
+    -- Key = Test/Beta
+end)
+Section:NewButton("Auto Build", "", function()
+    local old = httpget_async
+getgenv().httpget_async = function(url, ...)
+    if url == 'https://www.stenutilities.com/discord/babft' then
+        return 'https://discord.gg/HXYqGnEr2K'
+    end
+    
+    if url == 'https://raw.githubusercontent.com/StenDirt/Trash-Game/main/UI.lua' then
+        return old('https://raw.githubusercontent.com/Val1antt/scripts/main/BuildABoat/BackupLib.lua', ...)
+    end
+    
+    return old(url, ...)
+end
 
-Noclip.Name = "Noclip"
-Noclip.Parent = game.CoreGui
-
-BG.Name = "BG"
-BG.Parent = Noclip
-BG.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
-BG.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
-BG.BorderSizePixel = 2
-BG.Position = UDim2.new(0.149479166, 0, 0.82087779, 0)
-BG.Size = UDim2.new(0, 210, 0, 127)
-BG.Active = true
-BG.Draggable = true
-
-Title.Name = "Title"
-Title.Parent = BG
-Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
-Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
-Title.BorderSizePixel = 2
-Title.Size = UDim2.new(0, 210, 0, 33)
-Title.Font = Enum.Font.Highway
-Title.Text = "Noclip"
-Title.TextColor3 = Color3.new(1, 1, 1)
-Title.FontSize = Enum.FontSize.Size32
-Title.TextSize = 30
-Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-Title.TextStrokeTransparency = 0
-
-Toggle.Parent = BG
-Toggle.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
-Toggle.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
-Toggle.BorderSizePixel = 2
-Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
-Toggle.Size = UDim2.new(0, 146, 0, 36)
-Toggle.Font = Enum.Font.Highway
-Toggle.FontSize = Enum.FontSize.Size28
-Toggle.Text = "Toggle"
-Toggle.TextColor3 = Color3.new(1, 1, 1)
-Toggle.TextSize = 25
-Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-Toggle.TextStrokeTransparency = 0
-
-StatusPF.Name = "StatusPF"
-StatusPF.Parent = BG
-StatusPF.BackgroundColor3 = Color3.new(1, 1, 1)
-StatusPF.BackgroundTransparency = 1
-StatusPF.Position = UDim2.new(0.314285725, 0, 0.708661377, 0)
-StatusPF.Size = UDim2.new(0, 56, 0, 20)
-StatusPF.Font = Enum.Font.Highway
-StatusPF.FontSize = Enum.FontSize.Size24
-StatusPF.Text = "Status:"
-StatusPF.TextColor3 = Color3.new(1, 1, 1)
-StatusPF.TextSize = 20
-StatusPF.TextStrokeColor3 = Color3.new(0.333333, 0.333333, 0.333333)
-StatusPF.TextStrokeTransparency = 0
-StatusPF.TextWrapped = true
-
-Status.Name = "Status"
-Status.Parent = BG
-Status.BackgroundColor3 = Color3.new(1, 1, 1)
-Status.BackgroundTransparency = 1
-Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
-Status.Size = UDim2.new(0, 56, 0, 20)
-Status.Font = Enum.Font.Highway
-Status.FontSize = Enum.FontSize.Size14
-Status.Text = "off"
-Status.TextColor3 = Color3.new(0.666667, 0, 0)
-Status.TextScaled = true
-Status.TextSize = 14
-Status.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-Status.TextWrapped = true
-Status.TextXAlignment = Enum.TextXAlignment.Left
-
-
-Toggle.MouseButton1Click:connect(function()
-	if Status.Text == "off" then
-		Clipon = true
-		Status.Text = "on"
-		Status.TextColor3 = Color3.new(0,185,0)
-		Stepped = game:GetService("RunService").Stepped:Connect(function()
-			if not Clipon == false then
-				for a, b in pairs(Workspace:GetChildren()) do
-                if b.Name == Plr.Name then
-                for i, v in pairs(Workspace[Plr.Name]:GetChildren()) do
-                if v:IsA("BasePart") then
-                v.CanCollide = false
-                end end end end
-			else
-				Stepped:Disconnect()
-			end
-		end)
-	elseif Status.Text == "on" then
-		Clipon = false
-		Status.Text = "off"
-		Status.TextColor3 = Color3.new(170,0,0)
-	end
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Val1antt/scripts/main/BuildABoat/BuildABoatRestored.lua"),true))()
+end)
+local Tab = Window:NewTab("PSX")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Project WD", "Best Script", function()
+    getgenv().boothsnipe = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+Section:NewButton("Rafa Gui", "Some ...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/psx.lua"))()
+end)
+local Tab = Window:NewTab("BloxFr")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Auto Farm", "Some", function()
+    _G.Key = "E3R-O399-NIL"
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaconBABA/T-HUB/main/Main'),true))()
+end)
+Section:NewButton("Mukuru Hub", "Some", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+local Tab = Window:NewTab("BSS")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Family Club", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FamilyClub124/Loader/main/Family"))()
+end)
+Section:NewButton("Macro v2", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/Kyoichi%20hub"))()
+end)
+local Tab = Window:NewTab("Pls Donate")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Can Hub", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/stuffman0001/CanHub/main/Code"))()
+end)
+Section:NewButton("Binary Hub", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryHubOfficial/binaryhub/main/init.lua"))()
+end)
+local Tab = Window:NewTab("Arsenal")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Thunder Client", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/antipipka/roblox/main/Arsenal.lua"))()
+end)
+Section:NewButton("Osy Hub", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NullProtector/NullProtector.github.io/main/Osy%20%7BProtected%20By%20Moonsec%5D"))()
+end)
+local Tab = Window:NewTab("Da Hood")
+local Section = Tab:NewSection("Main")
+Section:NewButton("ScriptHubV2", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV2/main/SCRIPTHUBV2", true))()
+end)
+Section:NewButton("Zinc Hub", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua"))()
+end)
+local Tab = Window:NewTab("MM2")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Kidachi", "Some", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/MM2_V2"))()
+end)
+Section:NewButton("Admin Panel MM2", "Some", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/woolips/tolis/main/77_7DBZZJU.lua'))()
+end)
+local Tab = Window:NewTab("TOH")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Lightux", "Some", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/woolips/tolis/main/77_7DBZZJU.lua'))()
+end)
+Section:NewButton("Weinz Hub", "Some", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/weiny-ez/Weinz_Car-Dealership/main/weinz_cars.lua'))()
+end)
+local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Infinite yield", "Cmd roblox", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")()
+end)
+Section:NewButton("Dark Dex", "Studio", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
