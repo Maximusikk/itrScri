@@ -81,7 +81,8 @@ end
 function teleportToMoney()
     while true do
         local availablePositions = {}
-        
+        local lastPos 
+
         for _, v in pairs(Workspace:GetDescendants()) do
             if v.Name == "Workplace" or v.Name == "Mansion2" or v.Name == "VampireCastle" or v.Name == "Mansion" or v.Name == "Hotel" or v.Name == "Factory" or v.Name == "MilBase" or v.Name == "House2" or v.Name == "ResearchFacility" or v.Name == "PoliceStation" then
                 for _, lel in pairs(v:GetDescendants()) do
@@ -94,25 +95,16 @@ function teleportToMoney()
         
         if #availablePositions > 0 then
             GetCurrBalanceBag()
-            if CurrBalanceValue <= 39 then
-                for _, v in pairs(Workspace:GetDescendants()) do
-                    if v.Name == "Workplace" or v.Name == "Mansion2" or v.Name == "VampireCastle" or v.Name == "Mansion" or v.Name == "Hotel" or v.Name == "Factory" or v.Name == "MilBase" or v.Name == "House2" or v.Name == "ResearchFacility" or v.Name == "PoliceStation" then
-                        for _, lel in pairs(v:GetDescendants()) do
-                            if lel.Name == "Coin_Server" then   
-                                print("last coin")
-                            end
-                        end
-                    end
-                end
-            end
             if CurrBalanceValue >= 40 then
                 print("full")
+                Player.Character.HumanoidRootPart.CFrame = lastPos
             else
                 local randomIndex = math.random(1, #availablePositions)
                 local position = availablePositions[randomIndex]
                 
                 wait(1.60)
                 Player.Character.HumanoidRootPart.CFrame = CFrame.new(position.x, position.y, position.z)
+                lastPos = CFrame.new(position.x, position.y, position.z)
                 Player.Character.Humanoid.Jump = true
                 wait(0.8)
                 pcall(LobbyTeleport)
