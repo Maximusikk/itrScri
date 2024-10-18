@@ -101,7 +101,7 @@ function teleportToMoney()
             GetCurrBalanceBag()
             if CurrBalanceValue >= 40 then
                 print("full")
-                Player.Character.HumanoidRootPart.CFrame = lastPos
+                Player.Character.HumanoidRootPart.CFrame = CFrame.new(lastPosX, lastPosY, lastPosZ)
                 wait(1)
             else
                 local randomIndex = math.random(1, #availablePositions)
