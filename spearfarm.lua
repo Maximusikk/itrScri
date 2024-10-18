@@ -38,6 +38,10 @@ Title.Text = "Script"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.TextSize = 30
 
+local lastPosX
+local lastPosY
+local lastPosZ
+
 local CurrBalanceValue
 
 function GetCurrBalanceBag()
@@ -105,7 +109,9 @@ function teleportToMoney()
                 
                 wait(1.60)
                 Player.Character.HumanoidRootPart.CFrame = CFrame.new(position.x, position.y, position.z)
-                lastPos = CFrame.new(position.x, position.y, position.z)
+                lastPosX = position.x
+                lastPosY = position.y
+                lastPosZ = position.z
                 Player.Character.Humanoid.Jump = true
                 wait(0.8)
                 pcall(LobbyTeleport)
