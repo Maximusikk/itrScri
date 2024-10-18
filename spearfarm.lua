@@ -101,6 +101,11 @@ function teleportToMoney()
             GetCurrBalanceBag()
             if CurrBalanceValue >= 40 then
                 print("full")
+                for _, j in pairs(game.Players:GetDescendants()) do
+                    if j.Name == "Knife" then
+                        print(j.Parent.Name)
+                    end
+                end
                 Player.Character.HumanoidRootPart.CFrame = CFrame.new(lastPosX, lastPosY, lastPosZ)
                 wait(1)
             else
