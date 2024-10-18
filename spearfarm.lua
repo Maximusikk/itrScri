@@ -77,21 +77,6 @@ function LobbyTeleport()
         end
     end
 end
-game.RunService.RenderStepped:Connect(function ()
-	--if (game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z - default_cframe.Z) > 15 then
-	--	angle = 0
-	--	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = default_cframe
-	--	wait(3)
-	--end
-	if angle == 360 then
-		angle = 0
-	end
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
-  	local x = radius * math.cos(math.rad(angle)) + Xc
-  	local z = radius * math.sin(math.rad(angle)) + Zc
-  	game.Players.LocalPlayer.Character.Humanoid:Move(Vector3.new(x,0,z))
-	angle = angle + 2
-end)
 
 function teleportToMoney()
     while true do
