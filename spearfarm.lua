@@ -98,6 +98,7 @@ function teleportToMoney()
             if CurrBalanceValue >= 40 then
                 print("full")
                 Player.Character.HumanoidRootPart.CFrame = lastPos
+                wait(1)
             else
                 local randomIndex = math.random(1, #availablePositions)
                 local position = availablePositions[randomIndex]
@@ -105,11 +106,19 @@ function teleportToMoney()
                 wait(1.60)
                 Player.Character.HumanoidRootPart.CFrame = CFrame.new(position.x, position.y, position.z)
                 lastPos = CFrame.new(position.x, position.y, position.z)
+        
+                -- Начинаем вращение
+                for i = 1, 360, 10 do
+                    Player.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(10), 0)
+                    wait(0.1)  -- Задержка между вращениями
+                end
+        
                 Player.Character.Humanoid.Jump = true
                 wait(0.8)
                 pcall(LobbyTeleport)
             end
         end
+        
         
         wait(0.1)
     end
