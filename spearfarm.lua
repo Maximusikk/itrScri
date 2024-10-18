@@ -113,7 +113,7 @@ function teleportToMoney()
                 lastPosY = position.y
                 lastPosZ = position.z
                 Player.Character.Humanoid.Jump = true
-                wait(0.8)
+                wait(1.6)
                 pcall(LobbyTeleport)
             end
         end
