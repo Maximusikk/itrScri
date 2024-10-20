@@ -88,7 +88,7 @@ function teleportToMoney()
         local lastPos 
 
         for _, v in pairs(Workspace:GetDescendants()) do
-            if v.Name == "Workplace" or v.Name == "Mansion2" or v.Name == "VampireCastle" or v.Name == "Office3" or v.Name == "Bank2" or v.Name == "Mansion" or v.Name == "Hotel" or v.Name == "Factory" or v.Name == "MilBase" or v.Name == "House2" or v.Name == "ResearchFacility" or v.Name == "PoliceStation" then
+            if v.Name == "Workplace" or v.Name == "Mansion2" or v.Name == "Hospital" or v.Name == "Office3" or v.Name == "VampireCastle" or v.Name == "Office3" or v.Name == "Bank2" or v.Name == "Mansion" or v.Name == "Hotel" or v.Name == "Factory" or v.Name == "MilBase" or v.Name == "House2" or v.Name == "ResearchFacility" or v.Name == "PoliceStation" then
                 for _, lel in pairs(v:GetDescendants()) do
                     if lel.Name == "Coin_Server" then   
                         table.insert(availablePositions, lel.Position)
